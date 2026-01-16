@@ -1,0 +1,44 @@
+#! /bin/bash
+export JOB=tau0_mnh_ar_hit_def_os18_1000_resamp
+export GG=5GG
+export HH=1H
+export STARTMINUTE=300  # from 19:00 LT
+export ENDMINUTE=960    # to 06:00 LT
+export NbNights=311
+export ACC=1.22         # accuracy for the tau0 (slide 12 instruments_vs_instruments_new_pipeline)
+#export ROOT="/Users/masciadri/FATE/TEST_AR/REAL/TREATED_FILES_ALESSIO_TO_VALERIO_10min_ar_asym_obs_asym_1h_0_1h_resamp/PROGS/night/1H_buf5/TAU_TREATED/1YEAR/"
+export ROOT="/Users/masciadri/FATE/TEST_AR/REAL/TREATED_FILES_ALESSIO_TO_VALERIO_10min_ar_asym_obs_asym_1h_0_1h_resamp/ALL_1YEAR/TAU_TREATED/"
+export STARTIN="TAU_ARevol_1H_night_"
+export TAIL=".dat"
+export MAXTAU=999.   # put 999. if one wants to consider the whole values without filtering
+# ATT: only the option 999. is valid if one wish to calculate the contingency tables
+rm -f ${JOB}
+test -f out_scatter_for_python_bef.dat && rm -f out_scatter_for_python_bef.dat
+test -f out_scatter_for_python_aft.dat && rm -f out_scatter_for_python_aft.dat
+exe90mac_mod_check_new ${JOB}
+./${JOB}<<EOF
+${GG}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${MAXTAU}
+${ACC}
+"${ROOT}"
+"${TAIL}"
+"${STARTIN}"
+'list_TAU_${GG}_${HH}_2024_aug.txt'
+'tau0_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_os18_1000_resamp.ps/cps'
+'tau0_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_os18_1000_resamp.ps/cps'
+EOF
+ps2pdf tau0_sim_mnh_ar_dimm_300_960_BEF_os18_1000_resamp.ps 
+pdfcrop tau0_sim_mnh_ar_dimm_300_960_BEF_os18_1000_resamp.pdf
+ps2pdf tau0_sim_mnh_ar_dimm_300_960_AFT_os18_1000_resamp.ps
+pdfcrop tau0_sim_mnh_ar_dimm_300_960_AFT_os18_1000_resamp.pdf
+rm -f tau0_sim_mnh_ar_dimm_300_960_BEF_os18_1000_resamp.ps
+rm -f tau0_sim_mnh_ar_dimm_300_960_AFT_os18_1000_resamp.ps
+python3 scatter_contour_tau.py out_scatter_for_python_bef.dat "Coherence time (ms) - OBS " "Coherence time (ms) - MNH" "" 0 20 5
+python3 scatter_contour_tau.py out_scatter_for_python_aft.dat "Coherence time (ms) - OBS " "Coherence time (ms) - MNH-AR" "" 0 20 5
+mv out_scatter_for_python_bef.png tau_os18_1000_out_scatter_for_python_bef.png
+mv out_scatter_for_python_aft.png tau_os18_1000_out_scatter_for_python_aft.png
+

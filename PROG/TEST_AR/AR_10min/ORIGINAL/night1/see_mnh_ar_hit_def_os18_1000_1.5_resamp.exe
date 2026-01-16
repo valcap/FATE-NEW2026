@@ -1,0 +1,47 @@
+#! /bin/bash
+export JOB=see_mnh_ar_hit_def_os18_1000_1.5_resamp
+export GG=5GG
+export HH=1H
+export STARTMINUTE=300  # from 19:00 LT
+#export STARTMINUTE=0  # from 19:00 LT
+export ENDMINUTE=960    # to 06:00 LT
+#export ENDMINUTE=1080    # to 06:00 LT
+#export NbNights=348
+export NbNights=326
+export ACC=0.24        # accuracy (SD) for the seeing insturments  (slide 3 instruments_insturments)
+#export ROOT="/Users/masciadri/FATE/TEST_AR/REAL/TREATED_FILES_ALESSIO_TO_VALERIO_10min_ar_asym_obs_asym_1h_0_1h_resamp/PROGS/night/1H_buf5/SEE_TREATED/1YEAR/"
+export ROOT="/Users/masciadri/FATE/TEST_AR/REAL/TREATED_FILES_ALESSIO_TO_VALERIO_10min_ar_asym_obs_asym_1h_0_1h_resamp/ALL_1YEAR/SEE_TREATED/"
+export STARTIN="SEE_ARevol_1H_night_"
+export TAIL=".dat"
+export MAXSEE=1.5   #  seeing < 1.5
+#export MAXSEE=999.   # put 999. if one wants to consider the whole values without filtering
+# ATT: only the option 999. is valid if one wish to calculate the contingency tables
+rm -f ${JOB}
+test -f out_scatter_for_python_bef.dat && rm -f out_scatter_for_python_bef.dat
+test -f out_scatter_for_python_aft.dat && rm -f out_scatter_for_python_aft.dat
+exe90mac_mod_check_new ${JOB}
+./${JOB}<<EOF
+${GG}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${MAXSEE}
+${ACC}
+"${ROOT}"
+"${TAIL}"
+"${STARTIN}"
+'list_SEE_${GG}_${HH}_2024_aug.txt'
+'see_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_os18_1000_15_resamp.ps/cps'
+'see_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_os18_1000_15_resamp.ps/cps'
+EOF
+ps2pdf see_sim_mnh_ar_dimm_300_960_BEF_os18_1000_15_resamp.ps see_sim_mnh_ar_dimm_300_960_BEF_os18_1000_15_resamp.pdf
+pdfcrop see_sim_mnh_ar_dimm_300_960_BEF_os18_1000_15_resamp.pdf
+ps2pdf see_sim_mnh_ar_dimm_300_960_AFT_os18_1000_15_resamp.ps
+pdfcrop see_sim_mnh_ar_dimm_300_960_AFT_os18_1000_15_resamp.pdf
+rm -f see_sim_mnh_ar_dimm_300_960_BEF_os18_1000_15_resamp.ps
+rm -f see_sim_mnh_ar_dimm_300_960_AFT_os18_1000_15_resamp.ps
+python3 scatter_contour_see.py out_scatter_for_python_bef.dat "Seeing (arcsec) - DIMM" "Seeing (arcsec) - MNH" "" 0 2.5 0.5
+python3 scatter_contour_see.py out_scatter_for_python_aft.dat "Seeing (arcsec) - DIMM" "Seeing (arcsec) - MNH-AR" "" 0 2.5 0.5
+mv out_scatter_for_python_bef.png see_os18_1000_15_out_scatter_for_python_bef_resamp.png
+mv out_scatter_for_python_aft.png see_os18_1000_15_out_scatter_for_python_aft_resamp.png

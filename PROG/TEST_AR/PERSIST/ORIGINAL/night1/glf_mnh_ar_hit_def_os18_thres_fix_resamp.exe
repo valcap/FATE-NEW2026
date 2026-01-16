@@ -1,0 +1,41 @@
+#! /bin/bash
+export JOB=glf_mnh_ar_hit_def_os18_thres_fix_resamp
+export GG=5GG
+export HH=1H
+export STARTMINUTE=300  # from 19:00 LT
+export ENDMINUTE=960    # to 06:00 LT
+export NbNights=312
+export ACC=0.14          # accuracy for the glf   (isntruments_vs_instrument_new+_pipeline slide 14)
+#export ROOT="/Users/masciadri/FATE/TEST_AR/REAL/TREATED_FILES_ALESSIO_TO_VALERIO_10min_ar_asym_obs_asym_1h_0_1h_resamp/ALL_1YEAR/GLF_TREATED/"
+export ROOT="/Users/masciadri/FATE/TEST_AR/REAL/TREATED_FILES_ALESSIO_TO_VALERIO_10min_ar_sym_resamp/ALL_1YEAR/GLF_TREATED/"
+export STARTIN="GLF_PERSISTENCE_1H_night_"
+export TAIL=".dat"
+export MAXGLF=999.   # put 999. if one wants to consider the whole values without filtering
+# ATT: only the option 999. is valid if one wish to calculate the contingency tables
+rm -f ${JOB}
+test -f out_scatter_for_python_bef.dat && rm -f out_scatter_for_python_bef.dat
+test -f out_scatter_for_python_aft.dat && rm -f out_scatter_for_python_aft.dat
+exe90mac_mod_check_new ${JOB}
+./${JOB}<<EOF
+${GG}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${MAXGLF}
+${ACC}
+"${ROOT}"
+"${TAIL}"
+"${STARTIN}"
+'list_GLF_${GG}_${HH}_2024_aug.txt'
+'glf_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_os18_thres_fix_resamp.ps/cps'
+'glf_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_os18_thres_fix_resamp.ps/cps'
+EOF
+ps2pdf glf_sim_mnh_ar_dimm_300_960_BEF_os18_thres_fix_resamp.ps glf_sim_mnh_ar_dimm_300_960_BEF_os18_thres_fix_resamp.pdf
+pdfcrop glf_sim_mnh_ar_dimm_300_960_BEF_os18_thres_fix_resamp.pdf
+ps2pdf glf_sim_mnh_ar_dimm_300_960_AFT_os18_thres_fix_resamp.ps
+pdfcrop glf_sim_mnh_ar_dimm_300_960_AFT_os18_thres_fix_resamp.pdf
+python3 scatter_contour_glf.py out_scatter_for_python_bef.dat "GLF - OBS" "GLF - MNH" "" 0. 1.0 0.2
+python3 scatter_contour_glf.py out_scatter_for_python_aft.dat "GLF - OBS" "GLF - MNH-AR" "" 0. 1.0 0.2
+mv out_scatter_for_python_bef.png glf_os18_out_scatter_for_python_bef.png
+mv out_scatter_for_python_aft.png glf_os18_out_scatter_for_python_aft.png

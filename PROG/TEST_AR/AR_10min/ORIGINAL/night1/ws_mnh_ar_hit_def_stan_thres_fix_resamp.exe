@@ -1,0 +1,43 @@
+#! /bin/bash
+export JOB=ws_mnh_ar_hit_def_stan_thres_fix_resamp
+export GG=5GG
+export HH=1H
+export STARTMINUTE=300  # from 19:00 LT
+#export STARTMINUTE=0  # from 14:00 LT
+export ENDMINUTE=960    # to 06:00 LT
+#export ENDMINUTE=1080    # to 08:00 LT
+export NbNights=357
+#export ROOT="/Users/masciadri/FATE/FATE_OUTPUT_REAL_TIME_TREATED/night1/1H_buf5/WS_TREATED/"
+export ROOT="/Users/masciadri/FATE/TEST_AR/REAL/TREATED_FILES_ALESSIO_TO_VALERIO_10min_ar_asym_obs_asym_1h_0_1h_resamp/ALL_1YEAR/WS_TREATED/"
+export STARTIN="WS_ARevol_1H_night_"
+export TAIL=".dat"
+export LIMIT=0.     # limite inferiore da usarsi quando si vuole studiare lo scattering plot di WS sopra una certa soglia. Se si vuole considerare tutto il sample mettere LIMIT=0.
+export MAXWS=999.   # put 999. if one wants to consider the whole values without filtering
+# ATT: use the option 999 if you wish to calculate the contingency tables
+rm -f ${JOB}
+test -f out_scatter_for_python_bef.dat && rm -f out_scatter_for_python_bef.dat
+test -f out_scatter_for_python_aft.dat && rm -f out_scatter_for_python_aft.dat
+exe90mac_mod_check_new ${JOB}
+./${JOB}<<EOF
+${GG}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${LIMIT}
+${MAXWS}
+"${ROOT}"
+"${TAIL}"
+"${STARTIN}"
+'list_WS_${GG}_${HH}_2024_aug.txt'
+'ws_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan_thres_fix_resamp.ps/cps'
+'ws_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan_thres_fix_resamp.ps/cps'
+EOF
+ps2pdf ws_sim_mnh_ar_dimm_300_960_BEF_stan_thres_fix_resamp.ps
+pdfcrop ws_sim_mnh_ar_dimm_300_960_BEF_stan_thres_fix_resamp.pdf
+ps2pdf ws_sim_mnh_ar_dimm_300_960_AFT_stan_thres_fix_resamp.ps
+pdfcrop ws_sim_mnh_ar_dimm_300_960_AFT_stan_thres_fix_resamp.pdf
+python3 scatter_contour_ws.py out_scatter_for_python_bef.dat "OBS-WS (m/s)" "MNH stan WS (m/s)" "" 0. 20. 5.
+python3 scatter_contour_ws.py out_scatter_for_python_aft.dat "OBS-WS (m/s)" "MNH-AR WS (m/s)" "" 0. 20. 5.
+mv out_scatter_for_python_bef.png ws_out_scatter_for_python_bef.png
+mv out_scatter_for_python_aft.png ws_out_scatter_for_python_aft.png
