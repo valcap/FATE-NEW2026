@@ -88,7 +88,7 @@ SUBROUTINE STATS_WIND_DIRECTION(VX,VY,SIZE_ARRAY,MEAN,SD,INC,NO_VALUE)
  else  
   IF (INC.ne.0) then 
    MEAN = 180*ATAN(MEAN_VY/MEAN_VX)/Pi !Resulting mean wind direction
-   if (mean_vx.lt.0.) MEAN = 90 - MEAN  
+   if (mean_vx.lt.0.) MEAN = 90 - MEAN
    if (mean_vx.gt.0.) MEAN = 270 - MEAN
    IF (MEAN.lt.0) MEAN = MEAN +360.
   endif
@@ -99,15 +99,11 @@ SUBROUTINE STATS_WIND_DIRECTION(VX,VY,SIZE_ARRAY,MEAN,SD,INC,NO_VALUE)
 
  WD=NO_VALUE
  DO I=1,SIZE_ARRAY
-     if (VX(I).EQ.0.)then
-     if (VY(I).LT.0.) WD(I)=0.
-     if (VY(I).GT.0.) WD(I)=180.
-     endif
   IF ( (VX(I).NE.NO_VALUE).AND.(VY(I).NE.NO_VALUE) ) then 
-        WD(I) = 180*ATAN(VY(I)/VX(I))/Pi
-        if (vx(i).lt.0.) WD(I) = 90 - WD(I)
-        if (vx(i).gt.0.) WD(I) = 270 - WD(I)
-        IF (WD(I).lt.0.) WD(I)=WD(I)+360.
+    WD(I) = 180*ATAN(VY(I)/VX(I))/Pi
+    if (vx(i).lt.0.) WD(I) = 90 - WD(I)
+    if (vx(i).gt.0.) WD(I) = 270 - WD(I)
+    IF (WD(I).lt.0.) WD(I)=WD(I)+360.
   endif
  ENDDO
 
@@ -131,86 +127,6 @@ SUBROUTINE STATS_WIND_DIRECTION(VX,VY,SIZE_ARRAY,MEAN,SD,INC,NO_VALUE)
  ENDIF
  SD = SQRT(SUM_DIFF_WD)
 END SUBROUTINE STATS_WIND_DIRECTION
-!******************************************************************************
-
-!******************************************************************************
-!******************************************************************************
-SUBROUTINE COMPUT_WIND_DIRECTION(VX,VY,SIZE_ARRAY,WD,MEAN,SD,INC,NO_VALUE)
-!Compute WIND DIRECTION starrting from VX and VY. We kept MEAN and SD because we created this routine startin from
-!stat_wind_direction
-!******************************************************************************
- implicit none
- INTEGER, INTENT(IN) :: SIZE_ARRAY
- REAL, DIMENSION(SIZE_ARRAY), INTENT(IN) :: VX,VY
- REAL, DIMENSION(SIZE_ARRAY), INTENT(OUT) :: WD
- REAL, INTENT(IN) :: NO_VALUE
- REAL, INTENT(OUT) :: MEAN,SD
- INTEGER, INTENT(OUT) :: INC
-
- INTEGER :: I
- REAL :: SUM_DIFF_WD
- REAL :: MEAN_VX,MEAN_VY,Pi
-
- Pi=3.141592654
- MEAN_VX=0
- MEAN_VY=0
- INC=0
- MEAN=NO_VALUE
- DO I=1,SIZE_ARRAY
-  IF ( (VX(I).NE.NO_VALUE).AND.(VY(I).NE.NO_VALUE) ) THEN
-   INC = INC+1
-   MEAN_VX = MEAN_VX + VX(I)
-   MEAN_VY = MEAN_VY + VY(I)
-  ENDIF
- ENDDO
- if (mean_vx.eq.0.) then
-  if (mean_vy.lt.0.) mean=0.
-  if (mean_vy.gt.0.) mean=180.
- else  
-  IF (INC.ne.0) then 
-   MEAN = 180*ATAN(MEAN_VY/MEAN_VX)/Pi !Resulting mean wind direction
-   if (mean_vx.lt.0.) MEAN = 90 - MEAN  
-   if (mean_vx.gt.0.) MEAN = 270 - MEAN
-   IF (MEAN.lt.0) MEAN = MEAN +360.
-  endif
- endif
- MEAN_VX = MEAN_VX / INC
- MEAN_VY = MEAN_VY / INC
-
-
- WD=NO_VALUE
- DO I=1,SIZE_ARRAY
-    if (VX(I).EQ.0.)then
-     if (VY(I).LT.0.) WD(I)=0.
-     if (VY(I).GT.0.) WD(I)=180.
-     endif
-  IF ( (VX(I).NE.NO_VALUE).AND.(VY(I).NE.NO_VALUE) ) then 
-        WD(I) = 180*ATAN(VY(I)/VX(I))/Pi
-        if (vx(i).lt.0.) WD(I) = 90 - WD(I)
-        if (vx(i).gt.0.) WD(I) = 270 - WD(I)
-        IF (WD(I).lt.0.) WD(I)=WD(I)+360.
-  endif
- ENDDO
-
-
- SUM_DIFF_WD=0
- SD=0
- INC=0
- DO I=1,SIZE_ARRAY
-  IF ( (WD(I).NE.NO_VALUE) ) THEN
-   INC = INC+1
-   IF ( ABS(WD(I) - MEAN).le.180 ) SUM_DIFF_WD = SUM_DIFF_WD + (WD(I) - MEAN)**2
-   IF ( ABS(WD(I) - MEAN).ge.180 ) THEN 
-    IF ( WD(I).gt.MEAN ) SUM_DIFF_WD = SUM_DIFF_WD + ( (WD(I)-360) - MEAN)**2
-    IF ( WD(I).lt.MEAN ) SUM_DIFF_WD = SUM_DIFF_WD + ( (WD(I)+360) - MEAN)**2
-   ENDIF
-  ENDIF
- ENDDO
- IF(INC.NE.1) THEN
-  SUM_DIFF_WD = SUM_DIFF_WD / (INC-1)
- ENDIF
- SD = SQRT(SUM_DIFF_WD)
-END SUBROUTINE COMPUT_WIND_DIRECTION
 !******************************************************************************
 
 !******************************************************************************
@@ -589,6 +505,7 @@ end subroutine ccc
 subroutine hit_rate(array1,array2,size_array,xlim1,xlim2,noval,tab_hr,pod,pc,ebd,lflag)
 !array1=reference (obs) from which xlim1 and xlim2 have been extracted
 ! To be used for 3x3 tables
+! valcap 20230314 viene utilizzata questa
 !******************************************************************************
 implicit none
 
@@ -602,7 +519,6 @@ real, intent(out) :: pc, ebd
 
 integer :: i,icount
 real :: a,b,c,d,e,f,g,h,ii
-
 if (present(lflag)) then
  if (lflag.eqv..true.) print *, 'Contingency table filled with percent.'
  if (lflag.eqv..false.) print *, 'Contingency table filled with numbers.'
@@ -633,7 +549,10 @@ do i=1,size_array
  endif
 enddo
 
-print *, 'Hit rate computed on',icount,'points.'
+print *, 'LOGINFO Hit rate computed on',icount,'points.'
+print *, 'Number of points ',icount,';'
+!print *, 'LOGINFO Number of points ',icount
+
 
 !  Expressed in percent
 if ( (present(lflag).and.(lflag.eqv..True.)).or.(.not.present(lflag)) ) then 
@@ -659,7 +578,7 @@ print *, 'POD(event2)=', pod(2)
 pod(3)=ii/(c+f+ii)*100
 print *, 'POD(event3)=', pod(3)
 pc=(a+e+ii)
-print*,'PC=',pc
+print*,'C=',pc
 ebd=(c+g)
 print*,'ebd=',ebd
 endif
@@ -677,20 +596,20 @@ f = tab_hr(2,3)
 g = tab_hr(3,1)
 h = tab_hr(3,2)
 ii = tab_hr(3,3)
-print *, 'X<',xlim1,xlim1,'<X<',xlim2,'X>',xlim2
-print *, tab_hr(1,1),tab_hr(1,2),tab_hr(1,3)
-print *, tab_hr(2,1),tab_hr(2,2),tab_hr(2,3)
-print *, tab_hr(3,1),tab_hr(3,2),tab_hr(3,3)
+print *, 'LOGINFO X<',xlim1,xlim1,'<X<',xlim2,'X>',xlim2
+print *, 'LOGINFO ',tab_hr(1,1),tab_hr(1,2),tab_hr(1,3)
+print *, 'LOGINFO ',tab_hr(2,1),tab_hr(2,2),tab_hr(2,3)
+print *, 'LOGINFO ',tab_hr(3,1),tab_hr(3,2),tab_hr(3,3)
 pod(1)=a/(a+d+g)*100
-print *, 'POD(event1)=', pod(1)
+print *, 'LOGINFO POD(event1)=', pod(1)
 pod(2)=e/(b+e+h)*100
-print *, 'POD(event2)=', pod(2)
+print *, 'LOGINFO POD(event2)=', pod(2)
 pod(3)=ii/(c+f+ii)*100
-print *, 'POD(event3)=', pod(3)
+print *, 'LOGINFO POD(event3)=', pod(3)
 pc=((a+e+ii)/icount)*100
-print*,'PC=',pc
+print*,'LOGINFO PC=',pc
 ebd=((c+g)/icount)*100
-print*,'ebd=',ebd
+print*,'LOGINFO ebd=',ebd
 endif
 
 end subroutine hit_rate
@@ -747,6 +666,7 @@ do i=1,size_array
 enddo
 
 print *, 'Hit rate computed on',icount,'points.'
+!print *, 'Number of points ',icount,';'
 
 !  Expressed in percent
 if ( (present(lflag).and.(lflag.eqv..True.)).or.(.not.present(lflag)) ) then
@@ -871,6 +791,7 @@ do i=1,size_array
 enddo
 
 print *, 'Hit rate computed on',icount,'points.'
+!print *, 'Number of points ',icount
 
 !  Expressed in percent
 if ( (present(lflag).and.(lflag.eqv..True.)).or.(.not.present(lflag)) ) then
@@ -993,6 +914,7 @@ do i=1,size_array
 enddo
 
 print *, 'Hit rate computed on',icount,'points.'
+!print *, 'Number of points ',icount
 
 if ( (present(lflag).and.(lflag.eqv..True.)).or.(.not.present(lflag)) ) then
 tab_hr = (tab_hr / icount)*100. !in %
@@ -1131,7 +1053,8 @@ do i=1,size_array
  endif
 enddo
 
-print *, 'Hit rate computed on',icount,'points.'
+!print *, 'Hit rate computed on',icount,'points.'
+print *, 'Number of points ',icount,';'
 
 if ( (present(lflag).and.(lflag.eqv..True.)).or.(.not.present(lflag)) ) then
 tab_hr = (tab_hr / icount)*100. !in %
@@ -1266,6 +1189,7 @@ do i=1,size_array
 enddo
 
 print *, 'Hit rate computed on',icount,'points.'
+!print *, 'Number of points ',icount
 
 a = tab_hr(1,1)
 b = tab_hr(1,2)
@@ -1290,7 +1214,7 @@ statnum(11)= (a - ar) / (a -ar + b + c) ! GSS (Gilbert Skill Score) or ETS (Equi
 if ( (present(lflag).and.(lflag.eqv..True.)).or.(.not.present(lflag)) ) tab_hr = (tab_hr / icount)*100. !in %
 
 print *, '------------'
-print *, 'X<',xlim,xlim,'<X<'
+print *, 'LOGINFO X<',xlim,xlim,'<X<'
 print *, tab_hr(1,1),tab_hr(1,2)
 print *, tab_hr(2,1),tab_hr(2,2)
 print *, '------------'
@@ -1701,7 +1625,7 @@ if ( (size_rs_array*np).ne.size_array ) then
   print *, 'It should be', int(size_array / np),'.'
   print *, 'Input array dimension  = ',size_array
   print *, 'Output array dimension = ',size_rs_array
-  print *, 'Number of points used in the computation of the average = ', np
+  print *, 'Number of point used in the computation of the average = ', np
   print *, 'Input array dimension / number of points used for the average = ',size_array/np
   stop
  endif
@@ -1753,7 +1677,7 @@ if ( (size_rs_wd*np).ne.size_array ) then
   print *, 'It should be', int(size_array / np),'.'
   print *, 'Input array dimension  = ',size_array
   print *, 'Output array dimension = ',size_rs_wd  
-  print *, 'Number of points used in the computation of the average = ', np
+  print *, 'Number of point used in the computation of the average = ', np
   print *, 'Input array dimension / number of points used for the average = ',size_array/np
   stop
  endif
@@ -1784,9 +1708,6 @@ SUBROUTINE MOVING_AVERAGE(ARRAY,SIZE_ARRAY,NP_M_A,M_A_ARRAY,NO_VALUE)
 !'discarded_value' is the value used to discard points from the average computation. A test is perform to see 
 !wether it exists at least one point different from discarded_value in the interval [i-N,...,i,...,i+N]. If not, 
 !then output_array(i)=discarded_value.
-!
-! MAI TESTATA E VALIDATA
-!
 !******************************************************************************
 ! use mod_statistics
  implicit none
@@ -1837,61 +1758,6 @@ SUBROUTINE MOVING_AVERAGE(ARRAY,SIZE_ARRAY,NP_M_A,M_A_ARRAY,NO_VALUE)
  enddo
 END SUBROUTINE MOVING_AVERAGE
 !******************************************************************************
-!******************************************************************************
-
-
-
-!******************************************************************************
-SUBROUTINE MOVING_AVERAGE_ASYM(ARRAY,SIZE_ARRAY,NP_M_A,M_A_ARRAY,NO_VALUE)
-!Compute a moving average of data but considering only data precendet to i.
-!How to call it:
-!call moving_average(input_array,size_of_input_array,N,output_array,discarded_value)
-!Average at i€[1,size_of_input_array] is computed over the [i-np_m_a] interval;
-!'output_array' has the same dimension as input_array;
-!'discarded_value' is the value used to discard points from the average computation. A test is perform to see
-!wether it exists at least one point different from discarded_value in the interval [i-np_m_a. If not,
-!then output_array(i)=discarded_value.
-!******************************************************************************
-! use mod_statistics
-    implicit none
-
-    integer,                     intent(in)  :: size_array   ! Dimensione dell'array di input
-    integer,                     intent(in)  :: np_m_a       ! Numero di punti usati per la media mobile
-    real,                        intent(in)  :: no_value     ! Valore da scartare nel calcolo della media mobile
-    real, dimension(size_array),  intent(in)  :: array       ! Array di input
-
-    real, dimension(size_array),  intent(out) :: m_a_array    ! Array di output della media mobile
-
-    integer                                   :: i, j, inc
-    real, dimension(size_array)               :: sd_m_a       ! Deviatore standard (se serve)
-    integer, dimension(size_array)            :: inc_m_a      ! Contatore dei punti validi
-
-    m_a_array = no_value   ! Inizializza l'output con il valore da scartare
-    sd_m_a    = 0.0        ! Inizializza la deviazione standard
-    inc_m_a   = 0          ! Inizializza il contatore
-
-    ! Inizio ciclo: consideriamo solo i dati precedenti per la media mobile
-    do i = 1, size_array
-        inc = 0  ! Contatore per verificare quanti valori validi ci sono nella finestra
-        ! Finestra da i-np_m_a fino a i (solo i dati precedenti)
-        do j = max(1, i-np_m_a), i
-            if (array(j) .ne. no_value) then
-                inc = inc + 1
-            end if
-        end do
-
-        ! Se ci sono punti validi nella finestra, calcoliamo la media mobile
-        if (inc .ne. 0) then
-            call stats(array(max(1, i-np_m_a):i), min(i, np_m_a+1), m_a_array(i), sd_m_a(i), inc_m_a(i), no_value)
-        else
-            ! Se non ci sono punti validi, manteniamo il valore da scartare
-            m_a_array(i) = no_value
-        end if
-    end do
-END SUBROUTINE MOVING_AVERAGE_ASYM
-!******************************************************************************
-
-
 
 !******************************************************************************
 !******************************************************************************
@@ -2165,59 +2031,6 @@ END SUBROUTINE MOVING_AVERAGE_WIND_DIRECTION_SD
     return
   end subroutine cumdist_tertiles
 !******************************************************************************
-!******************************************************************************
-  subroutine cumdist_tertiles_inv(N,F,CDX,CDY,XMED,X33,X66)
-!  Subroutine de calcul de la distribution cumulee des valeurs de F
-!  ENTREE:F:tableau de dimension N
-!         N: dimension de F
-!  SORTIE: CDX: abscissa de la distribution cumulee
-!          CDY: ordonnees de la distribution cumulee
-!          xmed: mediane
-!  F et CDX peuvent etre le meme tableau lors de l'appel
-!
-!  MAI TESTATO E VALIDATO
-!******************************************************************************
-    implicit none
-    integer, intent(in) :: N
-    real, dimension(N), intent(in) :: F
-    real, dimension(N), intent(out) :: CDX,CDY
-    real, dimension(N) :: AUX
-    real, intent(out) :: XMED,X33,X66
-    integer :: i,N2,N3,N4
-    integer, dimension(N) :: indx
-
-    call indexx_inv (N,F,indx)
-    AUX=F
-    CDX=AUX(indx)
-    N2=N/2
-    N3=N/3
-    N4=2*N/3
-    do i=1,N
-       CDY(i)=(real(i-1)/real(N-1))
-    enddo
-    if(2*N2.eq.N)then
-       XMED=0.5*(CDX(N2)+CDX(N2+1))
-    else
-       XMED=CDX(N2+1)
-    endif
-    if(3*N3.eq.N)then
-       X33=0.5*(CDX(N3)+CDX(N3+1))
-    else
-       X33=CDX(N3+1)
-    endif
-    if((3./2)*N4.eq.N)then
-       X66=0.5*(CDX(N4)+CDX(N4+1))
-    else
-       X66=CDX(N4+1)
-    endif
-
-!  equivalemment, au lieu du XMED construit comme ca
-!  on peut le definir aussi
-!            XMED=CDX(N2)+((0.5-CDY(N2))*(CDX(N2+1)-CDX(N2))
-!     1   /(CDY(N2+1)-CDY(N2)))
-    return
-  end subroutine cumdist_tertiles_inv
-!******************************************************************************
 
 !******************************************************************************
 !******************************************************************************
@@ -2258,47 +2071,7 @@ END SUBROUTINE MOVING_AVERAGE_WIND_DIRECTION_SD
     return
     end subroutine cumdist
 !******************************************************************************
-!******************************************************************************
-  subroutine cumdist_inv(N,F,CDX,CDY,XMED)
-!  Subroutine de calcul de la distribution cumulee des valeurs de F
-!  ENTREE:F:tableau de dimension N
-!         N: dimension de F
-!  SORTIE: CDX: abscissa de la distribution cumulee
-!          CDY: ordonnees de la distribution cumulee
-!          xmed: mediane
-!  F et CDX peuvent etre le meme tableau lors de l'appel
-!
-! MAI TESTATATO E VALIDATO
-!
-!******************************************************************************
-    implicit none
-    integer, intent(in) :: N
-    real, dimension(N), intent(in) :: F
-    real, dimension(N), intent(out) :: CDX,CDY
-    real, dimension(N) :: AUX
-    real, intent(out) :: XMED
-    integer :: i,N2
-    integer, dimension(N) :: indx
 
-    call indexx_inv (N,F,indx)
-    AUX=F
-    CDX=AUX(indx)
-    N2=N/2
-    do i=1,N
-       CDY(i)=(real(i-1)/real(N-1))
-    enddo
-    if(2*N2.eq.N)then
-       XMED=0.5*(CDX(N2)+CDX(N2+1))
-    else
-       XMED=CDX(N2+1)
-    endif
-!  equivalemment, au lieu du XMED construit comme ca
-!  on peut le definir aussi
-!            XMED=CDX(N2)+((0.5-CDY(N2))*(CDX(N2+1)-CDX(N2))
-!     1   /(CDY(N2+1)-CDY(N2)))
-    return
-    end subroutine cumdist_inv
-!******************************************************************************
 !******************************************************************************
 !******************************************************************************
  subroutine indexx (input_size, input_array, output_index)
@@ -2333,47 +2106,6 @@ END SUBROUTINE MOVING_AVERAGE_WIND_DIRECTION_SD
    end do
    return
  end subroutine indexx
-!******************************************************************************
-!******************************************************************************
- subroutine indexx_inv (input_size, input_array, output_index)
-!Output an ascending index vector output_index from an input array input_array
-!of size input_size
-!
-! MAI TESTATO E VALIDATO
-!
-!******************************************************************************
-   integer, intent(in):: input_size
-   real, dimension(input_size), intent(in):: input_array
-   integer, dimension(input_size) :: output_index_tmp
-      integer, dimension(input_size), intent(out):: output_index
-   integer :: i,j,ix,iix,jix
-
-   do i = 1, input_size
-     output_index_tmp(i) = i
-   end do
-
-   ! Selection sort
-   do i = 1, input_size - 1
-     iix = output_index_tmp(i)
-     ix = i
-     do j = i + 1, input_size
-       jix = output_index_tmp(j)
-       ! Do your comparison here
-       if (input_array(iix) .gt. input_array(jix)) then
-         ! Record the smallest
-         ix = j
-         iix = jix
-       end if
-     end do
-     ! Swap
-     output_index_tmp(ix) = output_index_tmp(i)
-     output_index_tmp(i) = iix
-   end do
-   do i = 1, input_size 
-   output_index(input_size - i+1)=output_index_tmp(i)
-   enddo
-   return
- end subroutine indexx_inv
 !******************************************************************************
 !******************************************************************************
   subroutine masswf (xh,xhmass1,xhmass,ndimhmass,xwf_inf,xwf_sup)
