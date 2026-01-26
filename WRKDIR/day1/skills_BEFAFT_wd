@@ -1,0 +1,1327 @@
+ GG=day
+ HH=1H
+ NbNights=         357
+ STARTMINUTE=       18000
+ ENDMINUTE=       57600
+ LIMIT=   3.00000000    
+ ROOT=/home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/WD_TREATED/
+ ROOT_WS=/home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/WS_TREATED/
+ TAIL=.dat
+ STARTIN=WD_ARevol_1H_day_
+ STARTIN_WS=WS_ARevol_1H_day_
+ CFILE_LIST_NIGHTS=list_WD.txt                                                                                                                                                                         
+ /home/report/NEW2026/FIGS/wd_sim_mnh_ar_dimm_300_960_BEF_stan.ps/cps                                                                                                                
+ /home/report/NEW2026/FIGS/wd_sim_mnh_ar_dimm_300_960_AFT_stan.ps/cps                                                                                                                
+ WD_ARevol_1H_day_
+ WS_ARevol_1H_day_
+ READING=20230901
+ READING=20230902
+ READING=20230903
+ READING=20230904
+ READING=20230905
+ READING=20230906
+ READING=20230907
+ READING=20230908
+ READING=20230909
+ READING=20230910
+ READING=20230911
+ READING=20230912
+ READING=20230913
+ READING=20230914
+ READING=20230915
+ READING=20230916
+ READING=20230917
+ READING=20230918
+ READING=20230919
+ READING=20230920
+ READING=20230921
+ READING=20230922
+ READING=20230923
+ READING=20230924
+ READING=20230925
+ READING=20230926
+ READING=20230927
+ READING=20230928
+ READING=20230929
+ READING=20230930
+ READING=20231001
+ READING=20231002
+ READING=20231003
+ READING=20231004
+ READING=20231005
+ READING=20231006
+ READING=20231007
+ READING=20231008
+ READING=20231009
+ READING=20231010
+ READING=20231011
+ READING=20231012
+ READING=20231013
+ READING=20231014
+ READING=20231015
+ READING=20231016
+ READING=20231017
+ READING=20231018
+ READING=20231019
+ READING=20231020
+ READING=20231021
+ READING=20231022
+ READING=20231023
+ READING=20231024
+ READING=20231025
+ READING=20231026
+ READING=20231027
+ READING=20231028
+ READING=20231029
+ READING=20231030
+ READING=20231031
+ READING=20231101
+ READING=20231102
+ READING=20231103
+ READING=20231104
+ READING=20231105
+ READING=20231106
+ READING=20231107
+ READING=20231108
+ READING=20231109
+ READING=20231110
+ READING=20231111
+ READING=20231112
+ READING=20231113
+ READING=20231114
+ READING=20231115
+ READING=20231116
+ READING=20231117
+ READING=20231118
+ READING=20231119
+ READING=20231120
+ READING=20231121
+ READING=20231122
+ READING=20231123
+ READING=20231124
+ READING=20231125
+ READING=20231126
+ READING=20231127
+ READING=20231128
+ READING=20231129
+ READING=20231130
+ READING=20231201
+ READING=20231202
+ READING=20231203
+ READING=20231204
+ READING=20231205
+ READING=20231206
+ READING=20231207
+ READING=20231208
+ READING=20231209
+ READING=20231210
+ READING=20231211
+ READING=20231212
+ READING=20231213
+ READING=20231214
+ READING=20231215
+ READING=20231216
+ READING=20231217
+ READING=20231218
+ READING=20231219
+ READING=20231220
+ READING=20231221
+ READING=20231222
+ READING=20231223
+ READING=20231224
+ READING=20231225
+ READING=20231226
+ READING=20231227
+ READING=20231228
+ READING=20231229
+ READING=20231230
+ READING=20231231
+ READING=20240101
+ READING=20240102
+ READING=20240103
+ READING=20240104
+ READING=20240105
+ READING=20240106
+ READING=20240107
+ READING=20240108
+ READING=20240109
+ READING=20240110
+ READING=20240111
+ READING=20240112
+ READING=20240113
+ READING=20240114
+ READING=20240115
+ READING=20240116
+ READING=20240117
+ READING=20240118
+ READING=20240119
+ READING=20240120
+ READING=20240121
+ READING=20240122
+ READING=20240123
+ READING=20240124
+ READING=20240125
+ READING=20240126
+ READING=20240127
+ READING=20240128
+ READING=20240129
+ READING=20240130
+ READING=20240131
+ READING=20240201
+ READING=20240202
+ READING=20240203
+ READING=20240204
+ READING=20240205
+ READING=20240206
+ READING=20240207
+ READING=20240208
+ READING=20240209
+ READING=20240210
+ READING=20240211
+ READING=20240212
+ READING=20240213
+ READING=20240214
+ READING=20240215
+ READING=20240216
+ READING=20240217
+ READING=20240218
+ READING=20240219
+ READING=20240220
+ READING=20240221
+ READING=20240222
+ READING=20240223
+ READING=20240224
+ READING=20240225
+ READING=20240226
+ READING=20240227
+ READING=20240228
+ READING=20240229
+ READING=20240301
+ READING=20240302
+ READING=20240303
+ READING=20240304
+ READING=20240305
+ READING=20240306
+ READING=20240307
+ READING=20240308
+ READING=20240309
+ READING=20240310
+ READING=20240311
+ READING=20240312
+ READING=20240313
+ READING=20240314
+ READING=20240315
+ READING=20240316
+ READING=20240317
+ READING=20240318
+ READING=20240319
+ READING=20240320
+ READING=20240321
+ READING=20240322
+ READING=20240323
+ READING=20240324
+ READING=20240325
+ READING=20240326
+ READING=20240327
+ READING=20240328
+ READING=20240329
+ READING=20240330
+ READING=20240331
+ READING=20240401
+ READING=20240402
+ READING=20240403
+ READING=20240404
+ READING=20240405
+ READING=20240406
+ READING=20240407
+ READING=20240408
+ READING=20240409
+ READING=20240410
+ READING=20240411
+ READING=20240412
+ READING=20240413
+ READING=20240414
+ READING=20240415
+ READING=20240416
+ READING=20240417
+ READING=20240418
+ READING=20240419
+ READING=20240420
+ READING=20240421
+ READING=20240422
+ READING=20240423
+ READING=20240424
+ READING=20240425
+ READING=20240426
+ READING=20240427
+ READING=20240428
+ READING=20240429
+ READING=20240430
+ READING=20240501
+ READING=20240502
+ READING=20240503
+ READING=20240504
+ READING=20240505
+ READING=20240506
+ READING=20240507
+ READING=20240508
+ READING=20240509
+ READING=20240510
+ READING=20240511
+ READING=20240512
+ READING=20240513
+ READING=20240514
+ READING=20240515
+ READING=20240516
+ READING=20240526
+ READING=20240527
+ READING=20240528
+ READING=20240529
+ READING=20240530
+ READING=20240531
+ READING=20240601
+ READING=20240602
+ READING=20240603
+ READING=20240604
+ READING=20240605
+ READING=20240606
+ READING=20240607
+ READING=20240608
+ READING=20240609
+ READING=20240610
+ READING=20240611
+ READING=20240612
+ READING=20240613
+ READING=20240614
+ READING=20240615
+ READING=20240616
+ READING=20240617
+ READING=20240618
+ READING=20240619
+ READING=20240620
+ READING=20240621
+ READING=20240622
+ READING=20240623
+ READING=20240624
+ READING=20240625
+ READING=20240626
+ READING=20240627
+ READING=20240628
+ READING=20240629
+ READING=20240630
+ READING=20240701
+ READING=20240702
+ READING=20240703
+ READING=20240704
+ READING=20240705
+ READING=20240706
+ READING=20240707
+ READING=20240708
+ READING=20240709
+ READING=20240710
+ READING=20240711
+ READING=20240712
+ READING=20240713
+ READING=20240714
+ READING=20240715
+ READING=20240716
+ READING=20240717
+ READING=20240718
+ READING=20240719
+ READING=20240720
+ READING=20240721
+ READING=20240722
+ READING=20240723
+ READING=20240724
+ READING=20240725
+ READING=20240726
+ READING=20240727
+ READING=20240728
+ READING=20240729
+ READING=20240730
+ READING=20240731
+ READING=20240801
+ READING=20240802
+ READING=20240803
+ READING=20240804
+ READING=20240805
+ READING=20240806
+ READING=20240807
+ READING=20240808
+ READING=20240809
+ READING=20240810
+ READING=20240811
+ READING=20240812
+ READING=20240813
+ READING=20240814
+ READING=20240815
+ READING=20240816
+ READING=20240817
+ READING=20240818
+ READING=20240819
+ READING=20240820
+ READING=20240821
+ READING=20240822
+ READING=20240823
+ READING=20240824
+ READING=20240825
+ READING=20240826
+ READING=20240827
+ READING=20240828
+ READING=20240829
+ READING=20240830
+ READING=20240831
+ NbLines_TOT=         446
+ NbLines_TOT_1D=      159222
+  PIPO
+           1   52.6651611    
+  PIPO
+           2   52.1336250    
+  PIPO
+           3   52.1336250    
+  PIPO
+           4   51.2327042    
+  PIPO
+           5   51.2327042    
+  PIPO
+           6   51.2327042    
+  PIPO
+           7   50.2486877    
+  PIPO
+           8   50.2486877    
+  PIPO
+           9   50.2486877    
+  PIPO
+          10   50.2486877    
+  PIPO
+          11   48.1044235    
+  PIPO
+          12   48.1044235    
+  PIPO
+          13   48.1044235    
+  PIPO
+          14   48.1044235    
+  PIPO
+          15   48.1044235    
+  PIPO
+          16   44.8148689    
+  PIPO
+          17   44.8148689    
+  PIPO
+          18   44.8148689    
+  PIPO
+          19   44.8148689    
+  PIPO
+          20   44.8148689    
+  PIPO
+          21   44.8148689    
+  PIPO
+          22   42.4027405    
+  PIPO
+          23   42.4027405    
+  PIPO
+          24   42.4027405    
+  PIPO
+          25   42.4027405    
+  PIPO
+          26   42.4027405    
+  PIPO
+          27   42.4027405    
+  PIPO
+          28   40.7228508    
+  PIPO
+          29   40.7228508    
+  PIPO
+          30   40.7228508    
+  PIPO
+          31   40.7228508    
+  PIPO
+          32   40.7228508    
+  PIPO
+          33   40.7228508    
+  PIPO
+          34   39.0327988    
+  PIPO
+          35   39.0327988    
+  PIPO
+          36   39.0327988    
+  PIPO
+          37   39.0327988    
+  PIPO
+          38   39.0327988    
+  PIPO
+          39   39.0327988    
+  PIPO
+          40   37.4294014    
+  PIPO
+          41   37.4294014    
+  PIPO
+          42   37.4294014    
+  PIPO
+          43   37.4294014    
+  PIPO
+          44   37.4294014    
+  PIPO
+          45   37.4294014    
+  PIPO
+          46   36.4533386    
+  PIPO
+          47   36.4533386    
+  PIPO
+          48   36.4533386    
+  PIPO
+          49   36.4533386    
+  PIPO
+          50   36.4533386    
+  PIPO
+          51   36.4533386    
+  PIPO
+          52   38.4428101    
+  PIPO
+          53   38.4428101    
+  PIPO
+          54   38.4428101    
+  PIPO
+          55   38.4428101    
+  PIPO
+          56   38.4428101    
+  PIPO
+          57   38.4428101    
+  PIPO
+          58   40.8061104    
+  PIPO
+          59   40.8061104    
+  PIPO
+          60   40.8061104    
+  PIPO
+          61   40.8061104    
+  PIPO
+          62   40.8061104    
+  PIPO
+          63   40.8061104    
+  PIPO
+          64   42.5754356    
+  PIPO
+          65   42.5754356    
+  PIPO
+          66   42.5754356    
+  PIPO
+          67   42.5754356    
+  PIPO
+          68   42.5754356    
+  PIPO
+          69   42.5754356    
+  PIPO
+          70   44.9464378    
+  PIPO
+          71   44.9464378    
+  PIPO
+          72   44.9464378    
+  PIPO
+          73   44.9464378    
+  PIPO
+          74   44.9464378    
+  PIPO
+          75   44.9464378    
+  PIPO
+          76   46.9752197    
+  PIPO
+          77   46.9752197    
+  PIPO
+          78   46.9752197    
+  PIPO
+          79   46.9752197    
+  PIPO
+          80   46.9752197    
+  PIPO
+          81   46.9752197    
+  PIPO
+          82   49.0504189    
+  PIPO
+          83   49.0504189    
+  PIPO
+          84   49.0504189    
+  PIPO
+          85   49.0504189    
+  PIPO
+          86   49.0504189    
+  PIPO
+          87   49.0504189    
+  PIPO
+          88   50.2597542    
+  PIPO
+          89   50.2597542    
+  PIPO
+          90   50.2597542    
+  PIPO
+          91   50.2597542    
+  PIPO
+          92   50.2597542    
+  PIPO
+          93   50.2597542    
+  PIPO
+          94   50.0917168    
+  PIPO
+          95   50.0917168    
+  PIPO
+          96   50.0917168    
+  PIPO
+          97   50.0917168    
+  PIPO
+          98   50.0917168    
+  PIPO
+          99   50.0917168    
+  PIPO
+         100   49.1015244    
+  PIPO
+         101   49.1015244    
+  PIPO
+         102   49.1015244    
+  PIPO
+         103   49.1015244    
+  PIPO
+         104   49.1015244    
+  PIPO
+         105   49.1015244    
+  PIPO
+         106   48.3178406    
+  PIPO
+         107   48.3178406    
+  PIPO
+         108   48.3178406    
+  PIPO
+         109   48.3178406    
+  PIPO
+         110   48.3178406    
+  PIPO
+         111   48.3178406    
+  PIPO
+         112   49.5052490    
+  PIPO
+         113   49.5052490    
+  PIPO
+         114   49.5052490    
+  PIPO
+         115   49.5052490    
+  PIPO
+         116   49.5052490    
+  PIPO
+         117   49.5052490    
+  PIPO
+         118   49.8328819    
+  PIPO
+         119   49.8328819    
+  PIPO
+         120   49.8328819    
+  PIPO
+         121   49.8328819    
+  PIPO
+         122   49.8328819    
+  PIPO
+         123   49.8328819    
+  PIPO
+         124   48.0714417    
+  PIPO
+         125   48.0714417    
+  PIPO
+         126   48.0714417    
+  PIPO
+         127   48.0714417    
+  PIPO
+         128   48.0714417    
+  PIPO
+         129   48.0714417    
+  PIPO
+         130   46.6639786    
+  PIPO
+         131   46.6639786    
+  PIPO
+         132   46.6639786    
+  PIPO
+         133   46.6639786    
+  PIPO
+         134   46.6639786    
+  PIPO
+         135   46.6639786    
+  PIPO
+         136   43.7457809    
+  PIPO
+         137   43.7457809    
+  PIPO
+         138   43.7457809    
+  PIPO
+         139   43.7457809    
+  PIPO
+         140   43.7457809    
+  PIPO
+         141   43.7457809    
+  PIPO
+         142   37.5879478    
+  PIPO
+         143   37.5879478    
+  PIPO
+         144   37.5879478    
+  PIPO
+         145   37.5879478    
+  PIPO
+         146   37.5879478    
+  PIPO
+         147   37.5879478    
+  PIPO
+         148   26.9243164    
+  PIPO
+         149   26.9243164    
+  PIPO
+         150   26.9243164    
+  PIPO
+         151   26.9243164    
+  PIPO
+         152   26.9243164    
+  PIPO
+         153   26.9243164    
+  PIPO
+         154   17.9297791    
+  PIPO
+         155   17.9297791    
+  PIPO
+         156   17.9297791    
+  PIPO
+         157   17.9297791    
+  PIPO
+         158   17.9297791    
+  PIPO
+         159   17.9297791    
+  PIPO
+         160   12.8522873    
+  PIPO
+         161   12.8522873    
+  PIPO
+         162   12.8522873    
+  PIPO
+         163   12.8522873    
+  PIPO
+         164   12.8522873    
+  PIPO
+         165   12.8522873    
+  PIPO
+         166   4.51296997    
+  PIPO
+         167   4.51296997    
+  PIPO
+         168   4.51296997    
+  PIPO
+         169   4.51296997    
+  PIPO
+         170   4.51296997    
+  PIPO
+         171   4.51296997    
+  PIPO
+         172   354.322449    
+  PIPO
+         173   354.322449    
+  PIPO
+         174   354.322449    
+  PIPO
+         175   354.322449    
+  PIPO
+         176   354.322449    
+  PIPO
+         177   354.322449    
+  PIPO
+         178   346.230133    
+  PIPO
+         179   346.230133    
+  PIPO
+         180   346.230133    
+  PIPO
+         181   346.230133    
+  PIPO
+         182   346.230133    
+  PIPO
+         183   346.230133    
+  PIPO
+         184   341.930450    
+  PIPO
+         185   341.930450    
+  PIPO
+         186   341.930450    
+  PIPO
+         187   341.930450    
+  PIPO
+         188   341.930450    
+  PIPO
+         189   341.930450    
+  PIPO
+         190   333.936707    
+  PIPO
+         191   333.936707    
+  PIPO
+         192   333.936707    
+  PIPO
+         193   333.936707    
+  PIPO
+         194   333.936707    
+  PIPO
+         195   333.936707    
+  PIPO
+         196   325.137970    
+  PIPO
+         197   325.137970    
+  PIPO
+         198   325.137970    
+  PIPO
+         199   325.137970    
+  PIPO
+         200   325.137970    
+  PIPO
+         201   325.137970    
+  PIPO
+         202   320.903687    
+  PIPO
+         203   320.903687    
+  PIPO
+         204   320.903687    
+  PIPO
+         205   320.903687    
+  PIPO
+         206   320.903687    
+  PIPO
+         207   320.903687    
+  PIPO
+         208   319.999603    
+  PIPO
+         209   319.999603    
+  PIPO
+         210   319.999603    
+  PIPO
+         211   319.999603    
+  PIPO
+         212   319.999603    
+  PIPO
+         213   319.999603    
+  PIPO
+         214   320.620453    
+  PIPO
+         215   320.620453    
+  PIPO
+         216   320.620453    
+  PIPO
+         217   320.620453    
+  PIPO
+         218   320.620453    
+  PIPO
+         219   320.620453    
+  PIPO
+         220   320.944519    
+  PIPO
+         221   320.944519    
+  PIPO
+         222   320.944519    
+  PIPO
+         223   320.944519    
+  PIPO
+         224   320.944519    
+  PIPO
+         225   320.944519    
+  PIPO
+         226   323.559265    
+  PIPO
+         227   323.559265    
+  PIPO
+         228   323.559265    
+  PIPO
+         229   323.559265    
+  PIPO
+         230   323.559265    
+  PIPO
+         231   323.559265    
+  PIPO
+         232   327.489166    
+  PIPO
+         233   327.489166    
+  PIPO
+         234   327.489166    
+  PIPO
+         235   327.489166    
+  PIPO
+         236   327.489166    
+  PIPO
+         237   327.489166    
+  PIPO
+         238   329.649292    
+  PIPO
+         239   329.649292    
+  PIPO
+         240   329.649292    
+  PIPO
+         241   329.649292    
+  PIPO
+         242   329.649292    
+  PIPO
+         243   329.649292    
+  PIPO
+         244   331.316650    
+  PIPO
+         245   331.316650    
+  PIPO
+         246   331.316650    
+  PIPO
+         247   331.316650    
+  PIPO
+         248   331.316650    
+  PIPO
+         249   331.316650    
+  PIPO
+         250   333.351654    
+  PIPO
+         251   333.351654    
+  PIPO
+         252   333.351654    
+  PIPO
+         253   333.351654    
+  PIPO
+         254   333.351654    
+  PIPO
+         255   333.351654    
+  PIPO
+         256   334.873932    
+  PIPO
+         257   334.873932    
+  PIPO
+         258   334.873932    
+  PIPO
+         259   334.873932    
+  PIPO
+         260   334.873932    
+  PIPO
+         261   334.873932    
+  PIPO
+         262   336.435089    
+  PIPO
+         263   336.435089    
+  PIPO
+         264   336.435089    
+  PIPO
+         265   336.435089    
+  PIPO
+         266   336.435089    
+  PIPO
+         267   336.435089    
+  PIPO
+         268   336.402954    
+  PIPO
+         269   336.402954    
+  PIPO
+         270   336.402954    
+  PIPO
+         271   336.402954    
+  PIPO
+         272   336.402954    
+  PIPO
+         273   336.402954    
+  PIPO
+         274   334.078369    
+  PIPO
+         275   334.078369    
+  PIPO
+         276   334.078369    
+  PIPO
+         277   334.078369    
+  PIPO
+         278   334.078369    
+  PIPO
+         279   334.078369    
+  PIPO
+         280   333.272461    
+  PIPO
+         281   333.272461    
+  PIPO
+         282   333.272461    
+  PIPO
+         283   333.272461    
+  PIPO
+         284   333.272461    
+  PIPO
+         285   333.272461    
+  PIPO
+         286   332.874908    
+  PIPO
+         287   332.874908    
+  PIPO
+         288   332.874908    
+  PIPO
+         289   332.874908    
+  PIPO
+         290   332.874908    
+  PIPO
+         291   332.874908    
+  PIPO
+         292   332.721832    
+  PIPO
+         293   332.721832    
+  PIPO
+         294   332.721832    
+  PIPO
+         295   332.721832    
+  PIPO
+         296   332.721832    
+  PIPO
+         297   332.721832    
+  PIPO
+         298   332.917786    
+  PIPO
+         299   332.917786    
+  PIPO
+         300   332.917786    
+  PIPO
+         301   332.917786    
+  PIPO
+         302   332.917786    
+  PIPO
+         303   332.917786    
+  PIPO
+         304   333.072632    
+  PIPO
+         305   333.072632    
+  PIPO
+         306   333.072632    
+  PIPO
+         307   333.072632    
+  PIPO
+         308   333.072632    
+  PIPO
+         309   333.072632    
+  PIPO
+         310   334.322571    
+  PIPO
+         311   334.322571    
+  PIPO
+         312   334.322571    
+  PIPO
+         313   334.322571    
+  PIPO
+         314   334.322571    
+  PIPO
+         315   334.322571    
+  PIPO
+         316   334.883575    
+  PIPO
+         317   334.883575    
+  PIPO
+         318   334.883575    
+  PIPO
+         319   334.883575    
+  PIPO
+         320   334.883575    
+  PIPO
+         321   334.883575    
+  PIPO
+         322   335.336792    
+  PIPO
+         323   335.336792    
+  PIPO
+         324   335.336792    
+  PIPO
+         325   335.336792    
+  PIPO
+         326   335.336792    
+  PIPO
+         327   335.336792    
+  PIPO
+         328   336.100891    
+  PIPO
+         329   336.100891    
+  PIPO
+         330   336.100891    
+  PIPO
+         331   336.100891    
+  PIPO
+         332   336.100891    
+  PIPO
+         333   336.100891    
+  PIPO
+         334   336.196655    
+  PIPO
+         335   336.196655    
+  PIPO
+         336   336.196655    
+  PIPO
+         337   336.196655    
+  PIPO
+         338   336.196655    
+  PIPO
+         339   336.196655    
+  PIPO
+         340   336.767029    
+  PIPO
+         341   336.767029    
+  PIPO
+         342   336.767029    
+  PIPO
+         343   336.767029    
+  PIPO
+         344   336.767029    
+  PIPO
+         345   336.767029    
+  PIPO
+         346   338.085266    
+  PIPO
+         347   338.085266    
+  PIPO
+         348   338.085266    
+  PIPO
+         349   338.085266    
+  PIPO
+         350   338.085266    
+  PIPO
+         351   338.085266    
+  PIPO
+         352   339.980377    
+  PIPO
+         353   339.980377    
+  PIPO
+         354   339.980377    
+  PIPO
+         355   339.980377    
+  PIPO
+         356   339.980377    
+  PIPO
+         357   339.980377    
+  PIPO
+         358   341.280548    
+  PIPO
+         359   341.280548    
+  PIPO
+         360   341.280548    
+  PIPO
+         361   341.280548    
+  PIPO
+         362   341.280548    
+  PIPO
+         363   341.280548    
+  PIPO
+         364   341.997498    
+  PIPO
+         365   341.997498    
+  PIPO
+         366   341.997498    
+  PIPO
+         367   341.997498    
+  PIPO
+         368   341.997498    
+  PIPO
+         369   341.997498    
+  PIPO
+         370   343.433960    
+  PIPO
+         371   343.433960    
+  PIPO
+         372   343.433960    
+  PIPO
+         373   343.433960    
+  PIPO
+         374   343.433960    
+  PIPO
+         375   343.433960    
+  PIPO
+         376   345.208923    
+  PIPO
+         377   345.208923    
+  PIPO
+         378   345.208923    
+  PIPO
+         379   345.208923    
+  PIPO
+         380   345.208923    
+  PIPO
+         381   345.208923    
+  PIPO
+         382   346.805725    
+  PIPO
+         383   346.805725    
+  PIPO
+         384   346.805725    
+  PIPO
+         385   346.805725    
+  PIPO
+         386   346.805725    
+  PIPO
+         387   346.805725    
+  PIPO
+         388   347.941772    
+  PIPO
+         389   347.941772    
+  PIPO
+         390   347.941772    
+  PIPO
+         391   347.941772    
+  PIPO
+         392   347.941772    
+  PIPO
+         393   347.941772    
+  PIPO
+         394   348.542786    
+  PIPO
+         395   348.542786    
+  PIPO
+         396   348.542786    
+  PIPO
+         397   348.542786    
+  PIPO
+         398   348.542786    
+  PIPO
+         399   348.542786    
+  PIPO
+         400   349.527802    
+  PIPO
+         401   349.527802    
+  PIPO
+         402   349.527802    
+  PIPO
+         403   349.527802    
+  PIPO
+         404   349.527802    
+  PIPO
+         405   349.527802    
+  PIPO
+         406   0.00000000    
+  PIPO
+         407   0.00000000    
+  PIPO
+         408   0.00000000    
+  PIPO
+         409   0.00000000    
+  PIPO
+         410   0.00000000    
+  PIPO
+         411   0.00000000    
+  PIPO
+         412   0.00000000    
+  PIPO
+         413   0.00000000    
+  PIPO
+         414   0.00000000    
+  PIPO
+         415   0.00000000    
+  PIPO
+         416   0.00000000    
+  PIPO
+         417   0.00000000    
+  PIPO
+         418   0.00000000    
+  PIPO
+         419   0.00000000    
+  PIPO
+         420   0.00000000    
+  PIPO
+         421   0.00000000    
+  PIPO
+         422   0.00000000    
+  PIPO
+         423   0.00000000    
+  PIPO
+         424   0.00000000    
+  PIPO
+         425   0.00000000    
+  PIPO
+         426   0.00000000    
+  PIPO
+         427   0.00000000    
+  PIPO
+         428   0.00000000    
+  PIPO
+         429   0.00000000    
+  PIPO
+         430   0.00000000    
+  PIPO
+         431   0.00000000    
+  PIPO
+         432   0.00000000    
+  PIPO
+         433   0.00000000    
+  PIPO
+         434   0.00000000    
+  PIPO
+         435   0.00000000    
+  PIPO
+         436   0.00000000    
+  PIPO
+         437   0.00000000    
+  PIPO
+         438   0.00000000    
+  PIPO
+         439   0.00000000    
+  PIPO
+         440   0.00000000    
+  PIPO
+         441   0.00000000    
+  PIPO
+         442   0.00000000    
+  PIPO
+         443   0.00000000    
+  PIPO
+         444   0.00000000    
+  PIPO
+         445   0.00000000    
+  PIPO
+         446   0.00000000    
+ BIAS_MOD_BEF=  -14.1594801    
+ RMSE_MOD_BEF=   29.6306515    
+ SIGMA_MOD_BEF=   26.0285339    
+ INC_MOD_BEF=      129095
+ NbLines_TOT=      159222
+ BIAS_MOD_AFT=   6.38509691E-02
+ RMSE_MOD_AFT=   6.14119673    
+ SIGMA_MOD_AFT=   6.14086485    
+ INC_MOD_AFT=      129093
+ NbLines_TOT=      159222
+ NbFit=      129093 NbLines_TOT_1D=      159222
+ K=           0
+ #### FIT BEF ####
+ ENTERING fit routine
+ ARRAYS SIZE:       129093      129093
+ ndata=       129093
+ sx=   29663816.0    
+ invx=   1.13643848E-15
+ q=   0.00000000     ndata=      129093 size(x)=      129093 chi2=   1.69089395E+09 sigb=   1.38622755E-03
+ B_TOT(slope)=   1.06632257    
+ #### FIT AFT #####
+ ENTERING fit routine
+ ARRAYS SIZE:       129093      129093
+ ndata=       129093
+ sx=   29663816.0    
+ invx=   1.13643848E-15
+ q=   0.00000000     ndata=      129093 size(x)=      129093 chi2=   326019136.     sigb=   6.08692353E-04
+ B_TOT(slope)=  0.994768977    
+ ##########################################
+ ######## HIT_RATE for BEF ###########
+ ##########################################
+ Contingency table filled with numbers.
+ Hit rate computed on      129093 points.
+ X<   45.0000000     <X<   135.000000     <X<   225.000000     <X
+   53123.0000       3569.00000       89.0000000       1237.00000    
+   561.000000       2409.00000       495.000000       0.00000000    
+   236.000000       251.000000       16618.0000       4819.00000    
+   17729.0000       372.000000       1454.00000       26131.0000    
+ POD(event1)=   74.1433945    
+ POD(event2)=   36.4944687    
+ POD(event3)=   89.0758972    
+ POD(event4)=   81.1849442    
+ PC=   76.1319351    
+ ebd=  0.539920866    
+ ##########################################
+ ############ HIT_RATE for AFT #############
+ ##########################################
+ Contingency table filled with numbers.
+ Hit rate computed on      129093 points.
+ X<   45.0000000     <X<   135.000000     <X<   225.000000     <X
+   68952.0000       409.000000       0.00000000       1517.00000    
+   546.000000       6102.00000       52.0000000       5.00000000    
+   0.00000000       87.0000000       18088.0000       292.000000    
+   2151.00000       3.00000000       516.000000       30373.0000    
+ POD(event1)=   96.2358170    
+ POD(event2)=   92.4405365    
+ POD(event3)=   96.9553986    
+ POD(event4)=   94.3641815    
+ PC=   95.6790848    
+ ebd=   6.19708281E-03

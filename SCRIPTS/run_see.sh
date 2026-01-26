@@ -83,7 +83,7 @@ if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
+ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in the current directory"; exit 1
 fi
@@ -225,7 +225,7 @@ ROOT=$DATA_ROOT_DIR"/${prefixUC}_TREATED/"
 if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_ARevol_"
+STARTIN="${prefixUC}_ARevol_"${HH}_${FCST_DAY}_
 TAIL=".dat"
 #MAXSEE=999.   # put 999. if one wants to consider the whole values without filtering
 #             # ATT: use the option 999 if you wish to calculate the contingency tables

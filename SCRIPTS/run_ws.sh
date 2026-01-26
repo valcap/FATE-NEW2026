@@ -104,7 +104,7 @@ if [ ! -e ${JOB}.f90 ]; then
 fi
 
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_WS_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
+ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_WS_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -115,7 +115,6 @@ if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
 STARTIN="${prefixUC}_ARevol_"${HH}_${FCST_DAY}_
-TAIL=".dat"
 LIMIT=0.     # limite inferiore da usarsi quando si vuole studiare lo scattering plot di WS sopra una certa soglia.
              # Se si vuole considerare tutto il sample mettere LIMIT=0.
 MAXWS=999.   # put 999. if one wants to consider the whole values without filtering
@@ -132,8 +131,7 @@ fi
 
 subnotice "Running F90 program"
 # Run f90 file
-#./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
-./${JOB}.exe<<EOF 
+./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
 ${GG}
 ${HH}
 ${NbNights}
@@ -145,15 +143,17 @@ ${MAXWS}
 "${TAIL}"
 "${STARTIN}"
 '$FILE_LIST'
-'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan_resamp.ps/cps'
-'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan_resamp.ps/cps'
+'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan.ps/cps'
+'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan.ps/cps'
+FALSE
+$IS_DAY
 EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 #
 ## End of computing graphics and statistics for BEFORE and AFTER data
 #########################################
-exit
+
 #########################################
 ## check a file named tmpfile_NAME-OF-THE-VARIABLE, which is expected in $PROG_ROOT_DIR
 #
@@ -197,11 +197,10 @@ notice "Creating figures and calculating skills for BEFAFT $prefix ($descri) FOR
 cd $PROG_ROOT_DIR
 rm -f $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth}
 
-JOB=$prefix'_mnh_ar_hit_def_stan'
+JOB=$prefix'_mnh_ar_hit_def_stan_resamp'
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC"_${skills_file_lastmonth}.txt"
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
@@ -211,7 +210,7 @@ ROOT=$DATA_ROOT_DIR"/${prefixUC}_TREATED/"
 if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_ARevol_"
+STARTIN="${prefixUC}_ARevol_"${HH}_${FCST_DAY}_
 TAIL=".dat"
 LIMIT=0.     # limite inferiore da usarsi quando si vuole studiare lo scattering plot di WS sopra una certa soglia.
              # Se si vuole considerare tutto il sample mettere LIMIT=0.
@@ -232,11 +231,11 @@ subnotice "Running F90 program"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth}
 ${FCST_DAY_SHORT}${FCST_LEN}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
 ${LIMIT}
+$MAXWS
 "${ROOT}"
 "${TAIL}"
 "${STARTIN}"
@@ -267,12 +266,12 @@ notice "Creating figures and calculating skills for BEFAFT $prefix ($descri) and
 cd $PROG_ROOT_DIR
 rm -f $WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES
 
-JOB=$prefix'_mnh_ar_hit_def_stan'
+JOB=$prefix'_mnh_ar_hit_def_stan_resamp'
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC".txt"
+ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_WS_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -281,7 +280,7 @@ ROOT=$DATA_ROOT_DIR"/${prefixUC}_TREATED/"
 if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_ARevol_"
+STARTIN="${prefixUC}_ARevol_"${HH}_${FCST_DAY}_
 TAIL=".dat"
 LIMIT=0.     # limite inferiore da usarsi quando si vuole studiare lo scattering plot di WS sopra una certa soglia.
              # Se si vuole considerare tutto il sample mettere LIMIT=0.
@@ -300,13 +299,13 @@ fi
 subnotice "Running F90 program"
 # Run f90 file
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES
-${FCST_DAY_SHORT}${FCST_LEN}
+${GG}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
 ${LIMIT}
+$MAXWS
 "${ROOT}"
 "${TAIL}"
 "${STARTIN}"
@@ -337,6 +336,7 @@ fi
 #########################################
 ## check .ps files (see naming below), which are expected in $FIGS_ROOT_DIR
 #
+#######################################
 
 ##################################################################################
 ##################################################################################
@@ -355,8 +355,8 @@ JOB=$prefix'_mnh_ar_hit_def_stan'
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC".txt"
+ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_WS_${GG}_${HH}_2024_aug.txt $FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -365,7 +365,7 @@ ROOT=$DATA_PERS_DIR"/${prefixUC}_TREATED/"
 if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_PERSIST_"
+STARTIN="${prefixUC}_PERSIST_"${HH}_${FCST_DAY}
 TAIL=".dat"
 LIMIT=0.     # limite inferiore da usarsi quando si vuole studiare lo scattering plot di WS sopra una certa soglia.
              # Se si vuole considerare tutto il sample mettere LIMIT=0.
@@ -386,7 +386,6 @@ subnotice "Running F90 program"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_PER_${prefix}
 ${GG}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
@@ -397,7 +396,7 @@ ${LIMIT}
 '$FILE_LIST'
 '$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan_per.ps/cps'
 '$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan_per.ps/cps'
-FALSE
+TRUE
 EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
@@ -446,7 +445,6 @@ JOB=$prefix'_mnh_ar_hit_def_stan'
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC"_${skills_file_lastmonth}.txt"
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
@@ -456,7 +454,7 @@ ROOT=$DATA_PERS_DIR"/${prefixUC}_TREATED/"
 if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_PERSIST_"
+STARTIN="${prefixUC}_PERSIST_"${HH}_${FCST_DAY}
 TAIL=".dat"
 LIMIT=0.     # limite inferiore da usarsi quando si vuole studiare lo scattering plot di WS sopra una certa soglia.
              # Se si vuole considerare tutto il sample mettere LIMIT=0.
@@ -477,7 +475,6 @@ subnotice "Running F90 program"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth}
 ${GG}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
@@ -488,7 +485,7 @@ ${LIMIT}
 '$FILE_LIST'
 '$FIGS_ROOT_DIR/pippo1.ps/cps'
 '$FIGS_ROOT_DIR/pippo2.ps/cps'
-FALSE
+TRUE
 EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
@@ -506,6 +503,9 @@ fi
 #
 ##
 #########################################
+#############################
+# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+exit
 
 ##################################################################################
 ##################################################################################

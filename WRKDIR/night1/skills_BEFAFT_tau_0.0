@@ -1,0 +1,112 @@
+ GG=5GG
+ HH=1H
+ NbNights=         311
+ STARTMINUTE=       18000
+ ENDMINUTE=       57600
+ MAXTAU=   999.000000    
+ ACC=   0.00000000    
+ ROOT=/home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/nig1/TAU_TREATED/
+ TAIL=.dat
+ STARTIN=TAU_ARevol_1H_night_
+ CFILE_LIST_NIGHTS=list_TAU.txt                                                                                                            
+ /home/report/NEW2026/FIGS/tau_sim_mnh_ar_dimm_300_960_BEF_os18_1000.ps/cps                                              
+ /home/report/NEW2026/FIGS/tau_sim_mnh_ar_dimm_300_960_AFT_os18_1000.ps/cps                                              
+ TAU_ARevol_1H_night_
+ NbLines_TOT=         399
+ NbLines_TOT_1D=      124089
+ MAXVAL_TAU_OBS_1D=   23.8330402    
+ BIAS_TAU_MOD_BEF=   8.77743512E-02
+ RMSE_TAU_MOD_BEF=   2.30992603    
+ SIGMA_TAU_MOD_BEF=   2.30825782    
+ INC_TAU_MOD_BEF=       90840
+ NbLines_TOT=      124089
+ BIAS_TAU_MOD_AFT=   1.92296468E-02
+ RMSE_TAU_MOD_AFT=  0.731236398    
+ SIGMA_TAU_MOD_AFT=  0.730983496    
+ INC_TAU_MOD_AFT=       90840
+ NbLines_TOT=      124089
+ NbFit=       90840 NbLines_TOT_1D=      124089
+ K=           0
+ #### FIT BEF ####
+ ENTERING fit routine
+ ARRAYS SIZE:        90840       90840
+ ndata=        90840
+ sx=   501236.562    
+ invx=   3.98028832E-12
+ q=   0.00000000     ndata=       90840 size(x)=       90840 chi2=   491629.781     sigb=   1.39888225E-03
+ B_TOT(slope)=   1.01588261    
+ #### FIT AFT #####
+ ENTERING fit routine
+ ARRAYS SIZE:        90840       90840
+ ndata=        90840
+ sx=   501236.562    
+ invx=   3.98028832E-12
+ q=   0.00000000     ndata=       90840 size(x)=       90840 chi2=   48634.7656     sigb=   4.39982541E-04
+ B_TOT(slope)=   1.00346899    
+ ***************
+ XMED_TAU=   4.77816010    
+ X33_TAU=   3.60344005    
+ X66_TAU=   6.20632982    
+ ***************
+ ***************
+ XMED_MOD_BEF=   4.93320990    
+ ***************
+ ##########################################
+ ######## HIT_RATE for BEF ###########
+ ##########################################
+ Contingency table filled with numbers.
+ Hit rate computed on       90840 points.
+ X<   3.36999989       3.36999989     <X<   5.78999996     X>   5.78999996    
+   20322.0000       7556.00000       785.000000    
+   5825.00000       12426.0000       4887.00000    
+   618.000000       9889.00000       28532.0000    
+ POD(event1)=   75.9275208    
+ POD(event2)=   41.5988731    
+ POD(event3)=   83.4171448    
+ PC=   67.4592667    
+ ebd=   1.54447377    
+ **************************************************
+ ****** HIT_RATE for BEF WITH RMSE=SD_instr *******
+ **************************************************
+ Contingency table filled with numbers.
+ Hit rate computed on       90840 points.
+ X<   3.36999989       3.36999989     <X<   5.78999996     X>   5.78999996    
+   20322.0000       7556.00000       785.000000    
+   5825.00000       12426.0000       4887.00000    
+   618.000000       9889.00000       28532.0000    
+ POD(event1)=   75.9275208    
+ POD(event2)=   41.5988731    
+ POD(event3)=   83.4171448    
+ PC=   67.4592667    
+ ebd=   1.54447377    
+ ***************
+ XMED_MOD_AFT=   4.76438999    
+ ***************
+ ##########################################
+ ############ HIT_RATE for AFT #############
+ ##########################################
+ Contingency table filled with numbers.
+ Hit rate computed on       90840 points.
+ X<   3.36999989       3.36999989     <X<   5.78999996     X>   5.78999996    
+   24890.0000       1889.00000       10.0000000    
+   1869.00000       25454.0000       2127.00000    
+   6.00000000       2528.00000       32067.0000    
+ POD(event1)=   92.9945831    
+ POD(event2)=   85.2130814    
+ POD(event3)=   93.7521973    
+ PC=   90.7210464    
+ ebd=   1.76133867E-02
+ **************************************************
+ ****** HIT_RATE for AFT WITH RMSE=SD_instr *******
+ **************************************************
+ Contingency table filled with numbers.
+ Hit rate computed on       90840 points.
+ X<   3.36999989       3.36999989     <X<   5.78999996     X>   5.78999996    
+   24890.0000       1889.00000       10.0000000    
+   1869.00000       25454.0000       2127.00000    
+   6.00000000       2528.00000       32067.0000    
+ POD(event1)=   92.9945831    
+ POD(event2)=   85.2130814    
+ POD(event3)=   93.7521973    
+ PC=   90.7210464    
+ ebd=   1.76133867E-02

@@ -1,0 +1,118 @@
+ GG=5GG
+ HH=1H
+ NbNights=          31
+ STARTMINUTE=       18000
+ ENDMINUTE=       57600
+ MAXRH=   999.000000    
+ ROOT=/home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/
+ TAIL=.dat
+ STARTIN=RH_ARevol_1H_day_
+ CFILE_LIST_NIGHTS=list_RH_LastMonth.txt                                                                                                   
+ /home/report/NEW2026/FIGS/temp1.ps/cps                                                                                  
+ /home/report/NEW2026/FIGS/temp2.ps/cps                                                                                  
+ F
+ T
+ RH_ARevol_1H_day_
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240801.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240802.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240803.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240804.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240805.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240806.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240807.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240808.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240809.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240810.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240811.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240812.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240813.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240814.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240815.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240816.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240817.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240818.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240819.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240820.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240821.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240822.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240823.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240824.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240825.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240826.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240827.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240828.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240829.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240830.dat                                                                                    
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/AR/day1/RH_TREATED/RH_ARevol_1H_day_20240831.dat                                                                                    
+ NbLines_TOT=         405
+ NbLines_TOT_1D=       12555
+ MAXRH_OBS_1D=   58.1278687    
+ BIAS_RH_MOD_BEF=  0.847295582    
+ RMSE_RH_MOD_BEF=   6.14822340    
+ SIGMA_RH_MOD_BEF=   6.08956003    
+ INC_RH_MOD_BEF=       11814
+ NbLines_TOT=       12555
+ BIAS_RH_MOD_AFT=   9.97509658E-02
+ RMSE_RH_MOD_AFT=   1.08442008    
+ SIGMA_RH_MOD_AFT=   1.07982254    
+ INC_RH_MOD_AFT=       11813
+ NbLines_TOT=       12555
+ NbFit=       11813 NbLines_TOT_1D=       12555
+ K=           0
+ #### FIT BEF ####
+ ENTERING fit routine
+ ARRAYS SIZE:        11813       11813
+ ndata=        11813
+ sx=   146398.328    
+ invx=   4.66581773E-11
+ q=   0.00000000     ndata=       11813 size(x)=       11813 chi2=   489379.031     sigb=   4.77884943E-03
+ B_TOT(slope)=   1.06826544    
+ #### FIT AFT #####
+ ENTERING fit routine
+ ARRAYS SIZE:        11813       11813
+ ndata=        11813
+ sx=   146398.328    
+ invx=   4.66581773E-11
+ q=   0.00000000     ndata=       11813 size(x)=       11813 chi2=   13826.6885     sigb=   8.03266652E-04
+ B_TOT(slope)=   1.00805473    
+ ***************
+ XMED_RH=   7.61966991    
+ X33_RH=   6.00000000    
+ X66_RH=   11.2786903    
+ ***************
+ ***************
+ XMED_MOD_BEF=   9.84298992    
+ ***************
+ ##########################################
+ ######## HIT_RATE for BEF ###########
+ ##########################################
+ Contingency table filled with numbers.
+ Hit rate computed on       11813 points.
+ X<   8.89000034       8.89000034     <X<   17.9200001     X>   17.9200001    
+   4758.00000       396.000000       0.00000000    
+   2001.00000       1467.00000       303.000000    
+   72.0000000       419.000000       2397.00000    
+ POD(event1)=   69.6530533    
+ POD(event2)=   64.2857132    
+ POD(event3)=   88.7777786    
+ PC=   72.9873886    
+ ebd=  0.609498024    
+ ***************
+ XMED_MOD_AFT=   7.68787003    
+ ***************
+ ##########################################
+ ############ HIT_RATE for AFT #############
+ ##########################################
+                                                                                                                                                                             LOGINFO PERCENTILES X33_RH=      8.9
+                                                                                                                                                                             LOGINFO PERCENTILES X66_RH=     17.9
+ Contingency table filled with numbers.
+ Hit rate computed on       11813 points.
+ X<   8.89000034       8.89000034     <X<   17.9200001     X>   17.9200001    
+   6679.00000       113.000000       0.00000000    
+   152.000000       2124.00000       51.0000000    
+   0.00000000       45.0000000       2649.00000    
+ POD(event1)=   97.7748489    
+ POD(event2)=   93.0762482    
+ POD(event3)=   98.1111145    
+ PC=   96.9440460    
+ ebd=   0.00000000    

@@ -83,7 +83,7 @@ if [ ! -e ${JOB}.f90 ]; then
 fi
 IDELTA=10
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
+ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in the current directory"; exit 1
 fi
@@ -106,8 +106,7 @@ rm -f ${JOB}.exe
 test -f out_scatter_for_python_bef.dat && rm -f out_scatter_for_python_bef.dat
 test -f out_scatter_for_python_aft.dat && rm -f out_scatter_for_python_aft.dat
 # Compile f90 file
-gfortran -Wall -fbounds-check -o ${JOB}.exe ${JOB}.f90 -I$NUMREC_DIR -I$LIBPERSO_DIR/mod -L$LIBPERSO_DIR -L$NUMREC_DIR -J$NUMREC_DIR -lpgplot -lpng -lz -lpers -lnumrec
-#gfortran -Wall -fbounds-check -o ${JOB}.exe ${JOB}.f90 -I$NUMREC_DIR -I$LIBPERSO_DIR/mod -L$LIBPERSO_DIR -L$NUMREC_DIR -J$NUMREC_DIR -lpgplot -lpng -lz -lpers -lnumrec > /dev/null 2>&1
+gfortran -Wall -fbounds-check -o ${JOB}.exe ${JOB}.f90 -I$NUMREC_DIR -I$LIBPERSO_DIR/mod -L$LIBPERSO_DIR -L$NUMREC_DIR -J$NUMREC_DIR -lpgplot -lpng -lz -lpers -lnumrec > /dev/null 2>&1
 if [ ! -e ${JOB}.exe ]; then
   echo "ops problem in compiling ${JOB}.f90"; exit 1
 fi
@@ -197,8 +196,8 @@ ROOT_WS=$DATA_ROOT_DIR"/WS_TREATED/"
 if [ ! -d $ROOT_WS ]; then
   echo "ops $ROOT_WS is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_ARevol_"
-STARTIN_WS="WS_ARevol_"
+STARTIN="${prefixUC}_ARevol_"${HH}_${FCST_DAY}_
+STARTIN_WS="WS_ARevol_"${HH}_${FCST_DAY}_
 TAIL=".dat"
 LIMIT=3.
 
@@ -216,7 +215,6 @@ subnotice "Running F90 program"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth}
 ${FCST_DAY_SHORT}${FCST_LEN}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
@@ -247,6 +245,9 @@ fi
 #
 ##
 #########################################
+###############################
+# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+exit
 
 ##################################################################################
 ##################################################################################

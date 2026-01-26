@@ -1,0 +1,14 @@
+ INIT LETTURA ARGOMENTI IN ENTRATA
+ GG=nig
+ HH=1H
+ NbNights=          10
+ STARTMINUTE=        1860
+ ENDMINUTE=       18000
+ LIMIT=   960.000000    
+ MAXWS=   0.00000000    
+ ROOT=999.
+ TAIL=/home/report/NEW2026/DATA/TREATED/FATE_1
+ STARTIN=.dat
+ CFILE_LIST_NIGHTS=WS_ARevol_1H_night_
+ PGPLOT1=list_WS_LastMonth.txt
+ PGPLOT2=/home/report/NEW2026/FIGS/temp1.ps/cps
