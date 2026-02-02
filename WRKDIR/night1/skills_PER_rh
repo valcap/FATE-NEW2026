@@ -1,0 +1,441 @@
+ GG=5GG
+ HH=1H
+ NbNights=         357
+ STARTMINUTE=       18000
+ ENDMINUTE=       57600
+ MAXRH=   999.000000    
+ ROOT=/home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/
+ TAIL=.dat
+ STARTIN=RH_PERSISTENCE_1H_night_
+ CFILE_LIST_NIGHTS=list_RH.txt                                                                                                             
+ /home/report/NEW2026/FIGS/rh_sim_mnh_ar_dimm_300_960_BEF_stan_per.ps/cps                                                
+ /home/report/NEW2026/FIGS/rh_sim_mnh_ar_dimm_300_960_AFT_stan_per.ps/cps                                                
+ FIX_THRES= F
+ RH_PERSISTENCE_1H_night_
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230901.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230902.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230903.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230904.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230905.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230906.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230907.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230908.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230909.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230910.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230911.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230912.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230913.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230914.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230915.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230916.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230917.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230918.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230919.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230920.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230921.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230922.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230923.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230924.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230925.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230926.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230927.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230928.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230929.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20230930.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231001.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231002.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231003.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231004.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231005.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231006.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231007.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231008.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231009.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231010.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231011.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231012.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231013.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231014.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231015.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231016.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231017.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231018.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231019.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231020.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231021.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231022.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231023.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231024.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231025.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231026.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231027.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231028.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231029.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231030.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231031.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231101.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231102.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231103.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231104.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231105.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231106.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231107.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231108.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231109.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231110.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231111.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231112.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231113.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231114.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231115.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231116.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231117.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231118.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231119.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231120.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231121.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231122.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231123.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231124.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231125.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231126.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231127.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231128.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231129.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231130.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231201.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231202.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231203.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231204.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231205.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231206.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231207.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231208.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231209.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231210.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231211.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231212.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231213.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231214.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231215.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231216.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231217.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231218.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231219.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231220.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231221.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231222.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231223.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231224.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231225.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231226.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231227.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231228.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231229.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231230.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20231231.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240101.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240102.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240103.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240104.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240105.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240106.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240107.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240108.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240109.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240110.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240111.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240112.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240113.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240114.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240115.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240116.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240117.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240118.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240119.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240120.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240121.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240122.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240123.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240124.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240125.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240126.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240127.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240128.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240129.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240130.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240131.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240201.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240202.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240203.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240204.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240205.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240206.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240207.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240208.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240209.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240210.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240211.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240212.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240213.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240214.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240215.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240216.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240217.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240218.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240219.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240220.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240221.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240222.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240223.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240224.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240225.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240226.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240227.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240228.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240229.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240301.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240302.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240303.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240304.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240305.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240306.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240307.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240308.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240309.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240310.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240311.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240312.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240313.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240314.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240315.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240316.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240317.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240318.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240319.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240320.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240321.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240322.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240323.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240324.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240325.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240326.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240327.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240328.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240329.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240330.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240331.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240401.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240402.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240403.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240404.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240405.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240406.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240407.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240408.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240409.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240410.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240411.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240412.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240413.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240414.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240415.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240416.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240417.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240418.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240419.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240420.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240421.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240422.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240423.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240424.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240425.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240426.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240427.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240428.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240429.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240430.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240501.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240502.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240503.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240504.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240505.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240506.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240507.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240508.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240509.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240510.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240511.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240512.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240513.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240514.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240515.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240516.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240526.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240527.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240528.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240529.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240530.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240531.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240601.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240602.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240603.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240604.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240605.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240606.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240607.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240608.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240609.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240610.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240611.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240612.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240613.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240614.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240615.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240616.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240617.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240618.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240619.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240620.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240621.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240622.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240623.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240624.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240625.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240626.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240627.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240628.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240629.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240630.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240701.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240702.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240703.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240704.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240705.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240706.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240707.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240708.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240709.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240710.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240711.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240712.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240713.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240714.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240715.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240716.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240717.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240718.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240719.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240720.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240721.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240722.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240723.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240724.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240725.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240726.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240727.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240728.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240729.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240730.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240731.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240801.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240802.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240803.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240804.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240805.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240806.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240807.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240808.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240809.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240810.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240811.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240812.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240813.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240814.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240815.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240816.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240817.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240818.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240819.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240820.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240821.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240822.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240823.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240824.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240825.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240826.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240827.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240828.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240829.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240830.dat                                                                        
+ /home/report/NEW2026/DATA/TREATED/FATE_10min_AR/PERSIST/nig1/RH_TREATED/RH_PERSISTENCE_1H_night_20240831.dat                                                                        
+ NbLines_TOT=         435
+ NbLines_TOT_1D=      155295
+ MAXRH_OBS_1D=   96.0000000    
+ BIAS_RH_MOD_BEF=  0.231557354    
+ RMSE_RH_MOD_BEF=   7.11947012    
+ SIGMA_RH_MOD_BEF=   7.11570358    
+ INC_RH_MOD_BEF=      133172
+ NbLines_TOT=      155295
+ BIAS_RH_MOD_AFT= -0.119016044    
+ RMSE_RH_MOD_AFT=   2.25059509    
+ SIGMA_RH_MOD_AFT=   2.24744606    
+ INC_RH_MOD_AFT=      133172
+ NbLines_TOT=      155295
+ NbFit=      133172 NbLines_TOT_1D=      155295
+ K=           0
+ #### FIT BEF ####
+ ENTERING fit routine
+ ARRAYS SIZE:       133172      133172
+ ndata=       133172
+ sx=   1884713.12    
+ invx=   2.81520141E-13
+ q=   0.00000000     ndata=      133172 size(x)=      133172 chi2=   6950929.50     sigb=   1.39887678E-03
+ B_TOT(slope)=   1.01635742    
+ #### FIT AFT #####
+ ENTERING fit routine
+ ARRAYS SIZE:       133172      133172
+ ndata=       133172
+ sx=   1884713.12    
+ invx=   2.81520141E-13
+ q=   0.00000000     ndata=      133172 size(x)=      133172 chi2=   666562.000     sigb=   4.33189882E-04
+ B_TOT(slope)=  0.991611779    
+ ***************
+ XMED_RH=   9.51966953    
+ X33_RH=   7.00000000    
+ X66_RH=   13.7967196    
+ ***************
+ ***************
+ XMED_MOD_BEF=   11.7826700    
+ ***************
+ ##########################################
+ ######## HIT_RATE for BEF ###########
+ ##########################################
+ Contingency table filled with numbers.
+ Hit rate computed on      133172 points.
+ X<   7.09000015       7.09000015     <X<   15.3199997     X>   15.3199997    
+   23608.0000       7968.00000       234.000000    
+   18890.0000       28790.0000       6624.00000    
+   3371.00000       11123.0000       32564.0000    
+ POD(event1)=   51.4683113    
+ POD(event2)=   60.1282349    
+ POD(event3)=   82.6036224    
+ PC=   63.7986946    
+ ebd=   2.70702553    
+ ***************
+ XMED_MOD_AFT=   9.39999962    
+ ***************
+ ##########################################
+ ############ HIT_RATE for AFT #############
+ ##########################################
+ Contingency table filled with numbers.
+ Hit rate computed on      133172 points.
+ X<   7.09000015       7.09000015     <X<   15.3199997     X>   15.3199997    
+   42920.0000       4031.00000       47.0000000    
+   2909.00000       42037.0000       2559.00000    
+   40.0000000       1813.00000       36816.0000    
+ POD(event1)=   93.5708237    
+ POD(event2)=   87.7947388    
+ POD(event3)=   93.3894730    
+ PC=   91.4403915    
+ ebd=   6.53290451E-02

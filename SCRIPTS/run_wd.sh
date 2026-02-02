@@ -112,23 +112,24 @@ if [ ! -e ${JOB}.exe ]; then
 fi
 
 subnotice "Running F90 program"
+# DEBUG
 # Run f90 file
-./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
-${FCST_DAY_SHORT}${FCST_LEN}
-${HH}
-${NbNights}
-${STARTMINUTE}
-${ENDMINUTE}
-${LIMIT}
-"${ROOT}"
-"${ROOT_WS}"
-"${TAIL}"
-"${STARTIN}"
-"${STARTIN_WS}"
-'$FILE_LIST'
-'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan.ps/cps'
-'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan.ps/cps'
-EOF
+#./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
+#${FCST_DAY_SHORT}${FCST_LEN}
+#${HH}
+#${NbNights}
+#${STARTMINUTE}
+#${ENDMINUTE}
+#${LIMIT}
+#"${ROOT}"
+#"${ROOT_WS}"
+#"${TAIL}"
+#"${STARTIN}"
+#"${STARTIN_WS}"
+#'$FILE_LIST'
+#'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan.ps/cps'
+#'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan.ps/cps'
+#EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 
@@ -139,9 +140,10 @@ rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 #########################################
 # a file named ${skills_file}_BEFAFT_${prefix} is expected in $WRKDIR 
 #
-if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix} ]; then
-  error "$WRKDIR/${skills_file}_BEFAFT_${prefix} not produced"
-fi
+# DEBUG
+#if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix} ]; then
+#  error "$WRKDIR/${skills_file}_BEFAFT_${prefix} not produced"
+#fi
 #
 ##
 #########################################
@@ -211,23 +213,24 @@ if [ ! -e ${JOB}.exe ]; then
 fi
 
 subnotice "Running F90 program"
+# DEBUG
 # Run f90 file
-./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth}
-${FCST_DAY_SHORT}${FCST_LEN}
-${HH}
-${NbNights}
-${STARTMINUTE}
-${ENDMINUTE}
-${LIMIT}
-"${ROOT}"
-"${ROOT_WS}"
-"${TAIL}"
-"${STARTIN}"
-"${STARTIN_WS}"
-'$FILE_LIST'
-'$FIGS_ROOT_DIR/stoca1.ps/cps'
-'$FIGS_ROOT_DIR/stoca2.ps/cps'
-EOF
+#./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth}
+#${FCST_DAY_SHORT}${FCST_LEN}
+#${HH}
+#${NbNights}
+#${STARTMINUTE}
+#${ENDMINUTE}
+#${LIMIT}
+#"${ROOT}"
+#"${ROOT_WS}"
+#"${TAIL}"
+#"${STARTIN}"
+#"${STARTIN_WS}"
+#'$FILE_LIST'
+#'$FIGS_ROOT_DIR/stoca1.ps/cps'
+#'$FIGS_ROOT_DIR/stoca2.ps/cps'
+#EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 rm -f $FIGS_ROOT_DIR/stoca1.ps $FIGS_ROOT_DIR/stoca2.ps
@@ -239,15 +242,14 @@ rm -f $FIGS_ROOT_DIR/stoca1.ps $FIGS_ROOT_DIR/stoca2.ps
 #########################################
 ## check a file named tmpfile_NAME-OF-THE-VARIABLE, which is expected in $PROG_ROOT_DIR
 #
-if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} ]; then
-  error "$WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} not produced"
-fi
+# DEBUG
+#if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} ]; then
+#  error "$WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} not produced"
+#fi
 #
 ##
 #########################################
 ###############################
-# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-exit
 
 ##################################################################################
 ##################################################################################
@@ -262,12 +264,12 @@ notice "Creating figures and calculating skills for PERSISTENCE $prefix ($descri
 cd $PERS_ROOT_DIR
 rm -f $WRKDIR/${skills_file}_PER_${prefix} 
 
-JOB=$prefix'_mnh_ar_hit_def_stan_45_45'
+JOB=$prefix'_mnh_ar_hit_def_stan_45_45_resamp'
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC".txt"
+ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -277,8 +279,8 @@ if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
 ROOT_WS=$DATA_PERS_DIR"/WS_TREATED/"
-STARTIN="${prefixUC}_PERSIST_"
-STARTIN_WS="WS_PERSIST_"
+STARTIN="${prefixUC}_PERSISTENCE_"${HH}_${FCST_DAY}_
+STARTIN_WS="WS_PERSISTENCE_"${HH}_${FCST_DAY}_
 TAIL=".dat"
 LIMIT=3.
 
@@ -296,7 +298,6 @@ subnotice "Running F90 program"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_PER_${prefix}
 ${GG}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
@@ -354,7 +355,7 @@ notice "Creating figures and calculating skills for PERSISTENCE $prefix ($descri
 cd $PERS_ROOT_DIR
 rm -f $WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth}
 
-JOB=$prefix'_mnh_ar_hit_def_stan_45_45'
+JOB=$prefix'_mnh_ar_hit_def_stan_45_45_resamp'
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
@@ -369,8 +370,8 @@ if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
 ROOT_WS=$DATA_PERS_DIR"/WS_TREATED/"
-STARTIN="${prefixUC}_PERSIST_"
-STARTIN_WS="WS_PERSIST_"
+STARTIN="${prefixUC}_PERSISTENCE_"${HH}_${FCST_DAY}_
+STARTIN_WS="WS_PERSISTENCE_"${HH}_${FCST_DAY}_
 TAIL=".dat"
 LIMIT=3.
 
@@ -388,7 +389,6 @@ subnotice "Running F90 program"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth}
 ${GG}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
@@ -419,6 +419,9 @@ fi
 ##
 #########################################
 
+# ###############################
+#############àAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+exit
 
 
 ##################################################################################
