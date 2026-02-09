@@ -121,24 +121,23 @@ fi
 
 subnotice "Running F90 program"
 echo $WRKDIR/${skills_file}_BEFAFT_${prefix}
-# DEBUG
 # Run f90 file
-#./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
-#${GG}
-#${HH}
-#${NbNights}
-#${STARTMINUTE}
-#${ENDMINUTE}
-#${MAXRH}
-#"${ROOT}"
-#"${TAIL}"
-#"${STARTIN}"
-#'$FILE_LIST'
-#'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan.ps/cps'
-#'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan.ps/cps'
-#FALSE
-#$IS_DAY
-#EOF
+./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
+${GG}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${MAXRH}
+"${ROOT}"
+"${TAIL}"
+"${STARTIN}"
+'$FILE_LIST'
+'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan.ps/cps'
+'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan.ps/cps'
+FALSE
+$IS_DAY
+EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 
@@ -149,10 +148,9 @@ rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 #########################################
 ## check a file named tmpfile_NAME-OF-THE-VARIABLE, which is expected in $PROG_ROOT_DIR
 #
-# DEBUG
-#if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix} ]; then
-#  error "$WRKDIR/${skills_file}_BEFAFT_${prefix} not produced"
-#fi
+if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix} ]; then
+  error "$WRKDIR/${skills_file}_BEFAFT_${prefix} not produced"
+fi
 #
 ##
 #########################################
@@ -292,23 +290,22 @@ fi
 
 subnotice "Running F90 program"
 # Run f90 file
-# DEBUG
-#./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES
-#${GG}
-#${HH}
-#${NbNights}
-#${STARTMINUTE}
-#${ENDMINUTE}
-#${MAXRH}
-#"${ROOT}"
-#"${TAIL}"
-#"${STARTIN}"
-#'$FILE_LIST'
-#'$FIGS_ROOT_DIR/temp1.ps/cps'
-#'$FIGS_ROOT_DIR/temp2.ps/cps'
-#TRUE
-#$IS_DAY
-#EOF
+./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES
+${GG}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${MAXRH}
+"${ROOT}"
+"${TAIL}"
+"${STARTIN}"
+'$FILE_LIST'
+'$FIGS_ROOT_DIR/temp1.ps/cps'
+'$FIGS_ROOT_DIR/temp2.ps/cps'
+TRUE
+$IS_DAY
+EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 
@@ -319,10 +316,9 @@ rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 #########################################
 ## check a file named tmpfile_NAME-OF-THE-VARIABLE, which is expected in $PROG_ROOT_DIR
 #
-# DEBUG
-#if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES ]; then
-#  error "$WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES not produced"
-#fi
+if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES ]; then
+  error "$WRKDIR/${skills_file}_BEFAFT_${prefix}_FIXTHRES not produced"
+fi
 #
 ##
 #########################################
@@ -437,7 +433,6 @@ if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
 STARTIN="${prefixUC}_PERSISTENCE_"${HH}_${FCST_DAY}_
-TAIL=".dat"
 LIMIT=0.     # limite inferiore da usarsi quando si vuole studiare lo scattering plot di WS sopra una certa soglia.
              # Se si vuole considerare tutto il sample mettere LIMIT=0.
 MAXRH=999.   # put 999. if one wants to consider the whole values without filtering

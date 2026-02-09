@@ -1,0 +1,18 @@
+#!/bin/bash
+
+fileenv='/home/report/NEW2026/SCRIPTS/fate-report-astro.env'
+for goal in day night
+do
+  for var in rh ws wd pwv
+  do
+    sh run_${var}.sh $fileenv $goal 1
+  done
+done
+
+for var in see tau glf
+do
+  sh run_${var}.sh $fileenv night 1
+done
+
+exit 1
+

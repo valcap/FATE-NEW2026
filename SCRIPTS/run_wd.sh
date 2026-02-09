@@ -112,24 +112,23 @@ if [ ! -e ${JOB}.exe ]; then
 fi
 
 subnotice "Running F90 program"
-# DEBUG
 # Run f90 file
-#./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
-#${FCST_DAY_SHORT}${FCST_LEN}
-#${HH}
-#${NbNights}
-#${STARTMINUTE}
-#${ENDMINUTE}
-#${LIMIT}
-#"${ROOT}"
-#"${ROOT_WS}"
-#"${TAIL}"
-#"${STARTIN}"
-#"${STARTIN_WS}"
-#'$FILE_LIST'
-#'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan.ps/cps'
-#'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan.ps/cps'
-#EOF
+./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
+${FCST_DAY_SHORT}${FCST_LEN}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${LIMIT}
+"${ROOT}"
+"${ROOT_WS}"
+"${TAIL}"
+"${STARTIN}"
+"${STARTIN_WS}"
+'$FILE_LIST'
+'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_stan.ps/cps'
+'$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_AFT_stan.ps/cps'
+EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 
@@ -140,10 +139,9 @@ rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 #########################################
 # a file named ${skills_file}_BEFAFT_${prefix} is expected in $WRKDIR 
 #
-# DEBUG
-#if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix} ]; then
-#  error "$WRKDIR/${skills_file}_BEFAFT_${prefix} not produced"
-#fi
+if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix} ]; then
+  error "$WRKDIR/${skills_file}_BEFAFT_${prefix} not produced"
+fi
 #
 ##
 #########################################
@@ -152,7 +150,7 @@ rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 ## check .ps files (see naming below), which are expected in $FIGS_ROOT_DIR
 #
 if [ ! -e $FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_${suffix}.ps ]; then
-  error "ops $FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_${suffix}.ps not produced"
+  error "ops $FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_${suffix}.ps not produced AAAAAAAAA"
 else
   rm -f $FIGS_ROOT_DIR/pippo.pdf
   ps2pdf $FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_${suffix}.ps $FIGS_ROOT_DIR/pippo.pdf
@@ -213,24 +211,23 @@ if [ ! -e ${JOB}.exe ]; then
 fi
 
 subnotice "Running F90 program"
-# DEBUG
 # Run f90 file
-#./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth}
-#${FCST_DAY_SHORT}${FCST_LEN}
-#${HH}
-#${NbNights}
-#${STARTMINUTE}
-#${ENDMINUTE}
-#${LIMIT}
-#"${ROOT}"
-#"${ROOT_WS}"
-#"${TAIL}"
-#"${STARTIN}"
-#"${STARTIN_WS}"
-#'$FILE_LIST'
-#'$FIGS_ROOT_DIR/stoca1.ps/cps'
-#'$FIGS_ROOT_DIR/stoca2.ps/cps'
-#EOF
+./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth}
+${FCST_DAY_SHORT}${FCST_LEN}
+${HH}
+${NbNights}
+${STARTMINUTE}
+${ENDMINUTE}
+${LIMIT}
+"${ROOT}"
+"${ROOT_WS}"
+"${TAIL}"
+"${STARTIN}"
+"${STARTIN_WS}"
+'$FILE_LIST'
+'$FIGS_ROOT_DIR/stoca1.ps/cps'
+'$FIGS_ROOT_DIR/stoca2.ps/cps'
+EOF
 rm -f ${JOB}.exe
 rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
 rm -f $FIGS_ROOT_DIR/stoca1.ps $FIGS_ROOT_DIR/stoca2.ps
@@ -242,10 +239,9 @@ rm -f $FIGS_ROOT_DIR/stoca1.ps $FIGS_ROOT_DIR/stoca2.ps
 #########################################
 ## check a file named tmpfile_NAME-OF-THE-VARIABLE, which is expected in $PROG_ROOT_DIR
 #
-# DEBUG
-#if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} ]; then
-#  error "$WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} not produced"
-#fi
+if [ ! -e $WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} ]; then
+  error "$WRKDIR/${skills_file}_BEFAFT_${prefix}_${skills_file_lastmonth} not produced"
+fi
 #
 ##
 #########################################
@@ -359,7 +355,6 @@ JOB=$prefix'_mnh_ar_hit_def_stan_45_45_resamp'
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC"_${skills_file_lastmonth}.txt"
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
@@ -372,7 +367,6 @@ fi
 ROOT_WS=$DATA_PERS_DIR"/WS_TREATED/"
 STARTIN="${prefixUC}_PERSISTENCE_"${HH}_${FCST_DAY}_
 STARTIN_WS="WS_PERSISTENCE_"${HH}_${FCST_DAY}_
-TAIL=".dat"
 LIMIT=3.
 
 rm -f ${JOB}.exe

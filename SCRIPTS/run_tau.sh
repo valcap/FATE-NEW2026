@@ -242,8 +242,6 @@ fi
 ##
 #########################################
 ##########################
-# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-exit
 
 ##################################################################################
 #                                   PERSISTENCE data 
@@ -261,8 +259,8 @@ JOB=$prefix'0_mnh_ar_hit_def_'${suffix}
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC".txt"
+ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -271,8 +269,7 @@ ROOT=$DATA_PERS_DIR"/${prefixUC}_TREATED/"
 if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_PERSIST_"
-TAIL=".dat"
+STARTIN="${prefixUC}_PERSISTENCE_"${HH}_${FCST_DAY}_
 MAXTAU=999.   # put 999. if one wants to consider the whole values without filtering
              # ATT: use the option 999 if you wish to calculate the contingency tables
 
@@ -293,7 +290,6 @@ subnotice "Running F90 program for ACC $ACC"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_PER_${prefix}_${ACC}
 ${FCST_DAY_SHORT}${FCST_LEN}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
@@ -357,7 +353,6 @@ JOB=$prefix'0_mnh_ar_hit_def_'${suffix}
 if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
-IDELTA=10
 FILE_LIST="list_"$prefixUC"_${skills_file_lastmonth}.txt"
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
@@ -367,8 +362,7 @@ ROOT=$DATA_PERS_DIR"/${prefixUC}_TREATED/"
 if [ ! -d $ROOT ]; then
   echo "ops $ROOT is missing or is not a directory"; exit 1
 fi
-STARTIN="${prefixUC}_PERSIST_"
-TAIL=".dat"
+STARTIN="${prefixUC}_PERSISTENCE_"${HH}_${FCST_DAY}_
 MAXTAU=999.   # put 999. if one wants to consider the whole values without filtering
              # ATT: use the option 999 if you wish to calculate the contingency tables
 
@@ -389,7 +383,6 @@ subnotice "Running F90 program for ACC $ACC"
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth}
 ${FCST_DAY_SHORT}${FCST_LEN}
 ${HH}
-${IDELTA}
 ${NbNights}
 ${STARTMINUTE}
 ${ENDMINUTE}
@@ -420,6 +413,8 @@ do
     error "$WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth} not produced"
   fi
 done
+# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+exit
 
 ##################################################################################
 ##################################################################################

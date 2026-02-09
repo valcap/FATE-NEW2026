@@ -1,0 +1,145 @@
+17:34:17 * Start of run_rh.sh
+17:34:17 * Creating figures and calculating skills for BEFAFT rh (relative humidity)
+‘./list_RH.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/day1/list_RH_5GG_1H_2024_aug.txt’
+17:34:17 -- Running F90 program
+/home/report/NEW2026/WRKDIR/day1/skills_BEFAFT_rh
+17:34:24 * Creating figures and calculating skills for BEFAFT rh (relative humidity) FOR LAST MONTH ONLY
+17:34:24 -- Running F90 program
+17:34:24 * Creating figures and calculating skills for BEFAFT rh (relative humidity) AND FIXED THRESHOLDS
+17:34:24 -- Running F90 program
+17:34:30 * Creating figures and calculating skills for PERSISTENCE rh (relative humidity)
+‘list_RH.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/day1/list_RH_5GG_1H_2024_aug.txt’
+17:34:30 -- Running F90 program
+17:34:37 * Creating figures and calculating skills for PERSISTENCE rh (relative humidity) FOR LAST MONTH ONLY
+17:34:37 -- Running F90 program
+17:34:37 * Start of run_ws.sh
+17:34:38 * Creating figures and calculating skills for BEFAFT ws (wind speed)
+‘./list_WS.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/day1/list_WS_5GG_1H_2024_aug.txt’
+17:34:38 -- Running F90 program
+17:34:46 * Creating figures and calculating skills for BEFAFT ws (wind speed) FOR LAST MONTH ONLY
+17:34:46 -- Running F90 program
+17:34:46 * Creating figures and calculating skills for BEFAFT ws (wind speed) and FIXED THRESHOLDS
+‘./list_WS.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/day1/list_WS_5GG_1H_2024_aug.txt’
+17:34:46 -- Running F90 program
+17:34:53 * Creating figures and calculating skills for PERSISTENCE ws (wind speed)
+‘list_WS.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/day1/list_WS_5GG_1H_2024_aug.txt’
+17:34:54 -- Running F90 program
+17:35:01 * Creating figures and calculating skills for PERSISTENCE ws (wind speed) FOR LAST MONTH ONLY !!!!!!
+17:35:01 -- Running F90 program
+17:35:01 * Start of run_wd.sh
+17:35:01 * Creating figures and calculating skills for BEFAFT wd (wind direction)
+‘./list_WD.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/day1/list_WD_5GG_1H_2024_aug.txt’
+17:35:01 -- Running F90 program
+17:35:03 * Creating figures and calculating skills for BEFAFT wd (wind direction) FOR LAST MONTH ONLY
+17:35:03 -- Running F90 program
+17:35:03 * Creating figures and calculating skills for PERSISTENCE wd (wind direction)
+‘list_WD.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/day1/list_WD_5GG_1H_2024_aug.txt’
+17:35:03 -- Running F90 program
+17:35:05 * Creating figures and calculating skills for PERSISTENCE wd (wind direction) FOR LAST MONTH ONLY !!!!!!
+17:35:05 -- Running F90 program
+17:35:05 * Start of run_pwv.sh
+17:35:05 * Creating figures and calculating skills for BEFAFT pwv (precipitable water vapor)
+‘./list_PWV.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/day1/list_PWV_5GG_1H_2024_aug.txt’
+17:35:06 -- Running F90 program
+17:35:12 * Creating figures and calculating skills for BEFAFT pwv (precipitable water vapor) FOR LAST MONTH ONLY
+17:35:12 -- Running F90 program
+17:35:12 * Creating figures and calculating skills for PERSISTENCE pwv (precipitable water vapor)
+‘list_PWV.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/day1/list_PWV_5GG_1H_2024_aug.txt’
+17:35:12 -- Running F90 program
+17:35:19 * Creating figures and calculating skills for PERSISTENCE pwv (precipitable water vapor) FOR LAST MONTH ONLY
+17:35:19 -- Running F90 program
+17:35:19 * Start of run_rh.sh
+17:35:19 * Creating figures and calculating skills for BEFAFT rh (relative humidity)
+‘./list_RH.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_RH_5GG_1H_2024_aug.txt’
+17:35:20 -- Running F90 program
+/home/report/NEW2026/WRKDIR/night1/skills_BEFAFT_rh
+17:35:26 * Creating figures and calculating skills for BEFAFT rh (relative humidity) FOR LAST MONTH ONLY
+17:35:27 -- Running F90 program
+17:35:27 * Creating figures and calculating skills for BEFAFT rh (relative humidity) AND FIXED THRESHOLDS
+17:35:27 -- Running F90 program
+17:35:33 * Creating figures and calculating skills for PERSISTENCE rh (relative humidity)
+‘list_RH.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/night1/list_RH_5GG_1H_2024_aug.txt’
+17:35:33 -- Running F90 program
+17:35:39 * Creating figures and calculating skills for PERSISTENCE rh (relative humidity) FOR LAST MONTH ONLY
+17:35:40 -- Running F90 program
+17:35:40 * Start of run_ws.sh
+17:35:40 * Creating figures and calculating skills for BEFAFT ws (wind speed)
+‘./list_WS.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_WS_5GG_1H_2024_aug.txt’
+17:35:40 -- Running F90 program
+17:35:48 * Creating figures and calculating skills for BEFAFT ws (wind speed) FOR LAST MONTH ONLY
+17:35:48 -- Running F90 program
+17:35:48 * Creating figures and calculating skills for BEFAFT ws (wind speed) and FIXED THRESHOLDS
+‘./list_WS.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_WS_5GG_1H_2024_aug.txt’
+17:35:48 -- Running F90 program
+17:35:55 * Creating figures and calculating skills for PERSISTENCE ws (wind speed)
+‘list_WS.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/night1/list_WS_5GG_1H_2024_aug.txt’
+17:35:56 -- Running F90 program
+17:36:03 * Creating figures and calculating skills for PERSISTENCE ws (wind speed) FOR LAST MONTH ONLY !!!!!!
+17:36:03 -- Running F90 program
+17:36:03 * Start of run_wd.sh
+17:36:03 * Creating figures and calculating skills for BEFAFT wd (wind direction)
+‘./list_WD.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_WD_5GG_1H_2024_aug.txt’
+17:36:03 -- Running F90 program
+17:36:04 * Creating figures and calculating skills for BEFAFT wd (wind direction) FOR LAST MONTH ONLY
+17:36:05 -- Running F90 program
+17:36:05 * Creating figures and calculating skills for PERSISTENCE wd (wind direction)
+‘list_WD.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/night1/list_WD_5GG_1H_2024_aug.txt’
+17:36:05 -- Running F90 program
+17:36:07 * Creating figures and calculating skills for PERSISTENCE wd (wind direction) FOR LAST MONTH ONLY !!!!!!
+17:36:07 -- Running F90 program
+17:36:07 * Start of run_pwv.sh
+17:36:07 * Creating figures and calculating skills for BEFAFT pwv (precipitable water vapor)
+‘./list_PWV.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_PWV_5GG_1H_2024_aug.txt’
+17:36:07 -- Running F90 program
+17:36:14 * Creating figures and calculating skills for BEFAFT pwv (precipitable water vapor) FOR LAST MONTH ONLY
+17:36:14 -- Running F90 program
+17:36:14 * Creating figures and calculating skills for PERSISTENCE pwv (precipitable water vapor)
+‘list_PWV.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/night1/list_PWV_5GG_1H_2024_aug.txt’
+17:36:14 -- Running F90 program
+17:36:18 * Creating figures and calculating skills for PERSISTENCE pwv (precipitable water vapor) FOR LAST MONTH ONLY
+17:36:18 -- Running F90 program
+17:36:18 * Start of run_see.sh
+17:36:18 * Creating figures and calculating skills for BEFAFT see (total seeing)
+‘./list_SEE.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_SEE_5GG_1H_2024_aug.txt’
+17:36:18 -- Running F90 program for ACC 0.0 for BEF DATA ONLY (i.e. standard configuration)
+/home/report/NEW2026/WRKDIR/night1/skills_BEFAFT_see_0.0
+17:36:22 -- Running F90 program for ACC 0.24 for BEF DATA ONLY (i.e. standard configuration)
+/home/report/NEW2026/WRKDIR/night1/skills_BEFAFT_see_0.24
+/home/report/NEW2026/WRKDIR/night1/skills_BEFAFT_see_0.24
+/home/report/NEW2026/FIGS/see_sim_mnh_ar_dimm_300_960_BEF_os18_1000.ps/cps
+17:36:26 -- Running F90 program for ACC 0.0 for AFT DATA ONLY (i.e. with AR (1H)
+17:36:30 -- Running F90 program for ACC 0.24 for AFT DATA ONLY (i.e. with AR (1H)
+17:36:35 * Creating figures and calculating skills for BEFAFT see (total seeing) FOR LAST MONTH ONLY
+17:36:35 -- Running F90 program for ACC 0.24
+17:36:35 -- Running F90 program for ACC 0.24
+17:36:35 * Creating figures and calculating skills for PERSISTENCE see (total seeing)
+‘list_SEE.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/night1/list_SEE_5GG_1H_2024_aug.txt’
+17:36:36 -- Running F90 program for ACC 0.0
+17:36:39 -- Running F90 program for ACC 0.24
+17:36:43 * Creating figures and calculating skills for PERSISTENCE see (total seeing) FOR LAST MONTH ONLY !!!!!!
+17:36:43 -- Running F90 program for ACC 0.24
+17:36:44 * Start of run_tau.sh
+17:36:44 * Creating figures and calculating skills for BEFAFT tau (wavefront coherence time)
+‘./list_TAU.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_TAU_5GG_1H_2024_aug.txt’
+17:36:44 -- Running F90 program for ACC 0.0
+17:36:46 -- Running F90 program for ACC 1.22
+17:36:50 * Creating figures and calculating skills for BEFAFT tau (wavefront coherence time) FOR LAST MONTH ONLY
+17:36:50 * Creating figures and calculating skills for PERSISTENCE tau (wavefront coherence time)
+‘list_TAU.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/night1/list_TAU_5GG_1H_2024_aug.txt’
+17:36:51 -- Running F90 program for ACC 0.0
+17:36:53 -- Running F90 program for ACC 1.22
+17:36:56 * Creating figures and calculating skills for PERSISTENCE tau (wavefront coherence time) FOR LAST MONTH ONLY !!!!!!!!!!!!!
+17:36:56 -- Running F90 program for ACC 1.22
+17:36:56 * Start of run_glf.sh
+17:36:56 * Creating figures and calculating skills for BEFAFT glf (ground layer fraction)
+‘./list_GLF.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/night1/list_GLF_5GG_1H_2024_aug.txt’
+17:36:57 -- Running F90 program for ACC 0.0
+17:37:00 -- Running F90 program for ACC 0.14
+17:37:04 * Creating figures and calculating skills for BEFAFT glf (ground layer fraction) FOR LAST MONTH ONLY
+17:37:04 -- Running F90 program for ACC 0.14
+17:37:05 * Creating figures and calculating skills for PERSISTENCE glf (ground layer fraction)
+‘list_GLF.txt’ -> ‘/TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/night1/list_GLF_5GG_1H_2024_aug.txt’
+17:37:05 -- Running F90 program for ACC 0.0
+17:37:07 -- Running F90 program for ACC 0.14
+17:37:11 * Creating figures and calculating skills for PERSISTENCE glf (ground layer fraction) FOR LAST MONTH ONLY
+17:37:11 -- Running F90 program for ACC 0.14
