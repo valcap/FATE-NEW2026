@@ -1,19 +1,3 @@
-PROGETTO FATE "Forecasting Atmosphere and Turbulence for Eso sites"
-
-Procedure per la creazione di un report mensile sulle performace del sistema di previsione delle variabili astroclimatiche
-
-Aggiornamento (Gennaio 2026-Febbraio 2026)
-
-Resources:
-- "Prevedere la turbolenza ottica? Ora ci pensa Fate" - https://www.media.inaf.it/2024/05/29/fate-project/
-- "FATE: forecasting optical turbulence to push the Very Large Telescope to its full potential" - http://www.inaf.it/en/inaf-news/fate-project
-
-
-
-
-
-
-
 # PROGETTO FATE  
 ## Forecasting Atmosphere and Turbulence for Eso sites  
 
