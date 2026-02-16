@@ -1,0 +1,165 @@
+%  Special instructions are included in this file after the
+%  symbol %>>>>
+
+\documentclass[a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fate}
+\usepackage{texnames}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{rotating,graphicx}
+\usepackage{eurosym}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{blindtext}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\LO{\mbox{${\cal L}_0 \ $}}
+\def\CN2{\mbox{$C_N^2$}}
+\def\CNb{\mbox{$C_{N,2}^2$}}
+\def\CNd{\mbox{$C_{N,1}^2$}}
+\def\CT2{\mbox{$C_T^2 \ $}}
+\def\tauO{\mbox{$\tau_{0}$}}
+\def\thetaO{\mbox{$\theta_{0}$}}
+\def\see{\mbox{$\varepsilon$}}
+\def\seeFA{\mbox{$\varepsilon_{FA} \ $}}
+\def\seeBL{\mbox{$\varepsilon_{BL} \ $}}
+\def\seed{\mbox{$\varepsilon_{d} \ $}}
+\def\seesurf{\mbox{$\varepsilon_{surf.} \ $}}
+\def\seem{\mbox{$\varepsilon_{m} \ $}}
+\def\seeTOT{\mbox{$\varepsilon_{TOT} \ $}}
+\def\sigmal2{\mbox{$\sigma ^{2}_{I} \ $}}
+\def\ventvet{\mbox{$\mathbf{\vec{V}} \ $}}
+
+%>>>> The title declaration is Mandatory:
+
+\title{FORECAST SYSTEM FOR ATMOSPHERE AND TURBULENCE\\
+at the VERY LARGE TELESCOPE} 
+
+%>>> The pagetitle is the title written on top of each page. Usually
+%>>> equal to title (but it must be on a single line). The command is
+%>>> mandatory (but it can be empty)
+
+\pagetitle{FATE - Monthly Report} 
+
+
+%>>>> The author is responsible for formatting the 
+%  author list
+\author{
+\vspace{1.0cm}
+\begin{minipage}{9.5cm}
+\begin{center}
+\LARGE{Performance assessment}\\
+%\LARGE{Monthly Report}\\
+\LARGE{LASTMONTHSTRING LASTYEARSTRING}\\
+\end{center}
+%TEAM: Alessio Turchi, Elena Masciadri \\ \\
+%INAF-Osservatorio Astrofisico di Arcetri\\ 
+%L.go Enrico Fermi 5\\
+%50125 Firenze, Italy\\ \\ \\
+%LaMMA\\ 
+%Via Madonna del Piano 10\\
+%50019 Sesto Fiorentino, Italy\\ \\
+\end{minipage}\\
+\vspace{3cm}
+%\begin{minipage}{9.5cm}
+%ESO BOARD: \\
+%Florian Kerber, Harald Kuntschner, Pierre-Yves Madec, Marc Sarazin \\
+%\end{minipage}\\ 
+}
+
+%>>>> The following declarations are MANDATORY
+\docnumber{FATE-001}
+\version{2.0}
+\date{TODAYDATESTRING}
+
+% Here begins your document
+
+\begin{document} 
+%>>>> Maketitle will print out the title page
+\maketitle 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%\begin{abstract}
+%blablabla\ldots
+%\end{abstract}
+
+\contents     %%% NB: This is different from plain LaTeX !!!!
+
+%\begin{figure}[h]
+%\begin{center}
+%\begin{tabular}{c}
+%\includegraphics[width=0.8\textwidth]{FIG/mose_management_plan_phase_B-crop.pdf}\\
+%\end{tabular}
+%\end{center}
+%\caption[Management-plan-phaseB]{\label{fig:Management-plan-phaseB} MOSE management plan - PHASE B}
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{acro}
+
+% Introduction
+\include{Introduction}
+
+% NIGHT1
+\include{night1}
+\include{night1_figures}
+\include{night1_statistics}
+\include{night1_PODs}
+
+% DAY1
+\include{day1}
+\include{day1_figures}
+\include{day1_statistics}
+\include{day1_PODs}
+
+% NIGHT2
+%\include{night2}
+%\include{night2_figures}
+%\include{night2_statistics}
+%\include{night2_PODs}
+
+% DAY2
+%\include{day2}
+%\include{day2_figures}
+%\include{day2_statistics}
+%\include{day2_PODs}
+
+% NIGHT3
+%\include{night3}
+%\include{night3_figures}
+%\include{night3_statistics}
+%\include{night3_PODs}
+
+% DAY3
+%\include{day3}
+%\include{day3_figures}
+%\include{day3_statistics}
+%\include{day3_PODs}
+
+% Tables
+%\include{textLOGs}
+%\include{tableLOGs}
+%\include{tableLOGs_ObsNight}
+%\include{tableLOGs_ObsDay}
+
+% References
+\addcontentsline{toc}{section}{References}
+\include{References}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Achievements_not_planned}
+%\include{Publications}
+%\include{Conclusions}
+%\include{Acknowledgements}
+%\include{REFERENCES}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appndx        %>>>> this command starts appendixes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document} 

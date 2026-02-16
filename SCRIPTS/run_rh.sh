@@ -32,7 +32,7 @@ else
 fi
 
 # Start
-notice "Start of "`basename $0`
+notice "+ + + Start of "`basename $0`" + + +"
 
 #########################################
 ## Working on rh
@@ -94,7 +94,7 @@ if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
+#ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in the current directory"; exit 1
 fi
@@ -120,7 +120,6 @@ if [ ! -e ${JOB}.exe ]; then
 fi
 
 subnotice "Running F90 program"
-echo $WRKDIR/${skills_file}_BEFAFT_${prefix}
 # Run f90 file
 ./${JOB}.exe<<EOF > $WRKDIR/${skills_file}_BEFAFT_${prefix}
 ${GG}
@@ -341,7 +340,7 @@ if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
+#ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -480,8 +479,6 @@ fi
 ##
 #########################################
 ###########################################################
-# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-exit
 
 
 ##################################################################################

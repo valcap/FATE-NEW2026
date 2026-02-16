@@ -1,0 +1,86 @@
+%  Special instructions are included in this file after the
+%  symbol %>>>>
+
+\documentclass[a4paper]{article}
+\usepackage{fate}
+\usepackage{texnames}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{rotating,graphicx}
+\usepackage{eurosym}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{blindtext}
+\def\LO{\mbox{${\cal L}_0 \ $}}
+\def\CN2{\mbox{$C_N^2$}}
+\def\CNb{\mbox{$C_{N,2}^2$}}
+\def\CNd{\mbox{$C_{N,1}^2$}}
+\def\CT2{\mbox{$C_T^2 \ $}}
+\def\tauO{\mbox{$\tau_{0}$}}
+\def\thetaO{\mbox{$\theta_{0}$}}
+\def\see{\mbox{$\varepsilon$}}
+\def\seeFA{\mbox{$\varepsilon_{FA} \ $}}
+\def\seeBL{\mbox{$\varepsilon_{BL} \ $}}
+\def\seed{\mbox{$\varepsilon_{d} \ $}}
+\def\seesurf{\mbox{$\varepsilon_{surf.} \ $}}
+\def\seem{\mbox{$\varepsilon_{m} \ $}}
+\def\seeTOT{\mbox{$\varepsilon_{TOT} \ $}}
+\def\sigmal2{\mbox{$\sigma ^{2}_{I} \ $}}
+\def\ventvet{\mbox{$\mathbf{\vec{V}} \ $}}
+% Forzare la numerazione corretta delle sezioni
+%\setcounter{section}{0}
+%\setcounter{secnumdepth}{0}
+
+%>>>> The title declaration is Mandatory:
+
+\title{FORECAST SYSTEM FOR ATMOSPHERE AND TURBULENCE\\
+at the VERY LARGE TELESCOPE} 
+
+%>>> The pagetitle is the title written on top of each page. Usually
+%>>> equal to title (but it must be on a single line). The command is
+%>>> mandatory (but it can be empty)
+
+\pagetitle{FATE - Monthly Report} 
+
+
+%>>>> The author is responsible for formatting the 
+%  author list
+\author{
+\vspace{1.0cm}
+\begin{minipage}{9.5cm}
+\begin{center}
+\LARGE{Performance assessment}\\
+\LARGE{Annex}\\
+\LARGE{LASTMONTHSTRING LASTYEARSTRING}
+\end{center}
+\end{minipage}\\
+\vspace{3cm}
+}
+
+%>>>> The following declarations are MANDATORY
+\docnumber{FATE-001}
+\version{2.0}
+\date{TODAYDATESTRING}
+
+% Here begins your document
+
+\begin{document} 
+%>>>> Maketitle will print out the title page
+\maketitle 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\contents     %%% NB: This is different from plain LaTeX !!!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{night1_contingency}
+\include{day1_contingency}
+%\include{night2_contingency}
+%\include{day2_contingency}
+%\include{night3_contingency}
+%\include{day3_contingency}
+
+\end{document} 
+

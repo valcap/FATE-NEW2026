@@ -1,0 +1,100 @@
+\begin{center}
+\HRule \\[0.4cm]
+SHORT-TERM FORECAST
+\HRule \\[0.4cm]
+\end{center}
+
+computed each full hour for each parameter
+
+Night forecast parameters:
+\begin{itemize}
+        \item seeing (see)
+        \item tau0 (tau)
+        \item ground-layer fraction (glf)
+        \item precipitable water vapor (pwv)
+        \item relative humidity (rh)
+        \item wind speed (ws)
+        \item wind direction (wd)
+\end{itemize}
+Day forecast parameters:
+\begin{itemize}
+        \item precipitable water vapor (pwv)
+        \item relative humidity (rh)
+        \item wind speed (ws)
+        \item wind direction (wd)      
+\end{itemize}
+This forecast relies on measurements obtained each full hour from http://archive.eso.org/wdb, using WDB interface
+Forecast (for each parameter) is only available if the following conditions are met:
+\begin{enumerate}
+\item http://archive.eso.org/wdb is accessible and available
+\item at least 2 past days worth of measurements available for the specific parameter
+\item last measurement (at each full hour) not older than 10 minutes
+\item at least 30 minutes of measurements in the current time span (sunset-sunrise for night forecast and sunrise-sunset for day forecast)
+\end{enumerate}
+
+FILE NAME FORMAT:
+\begin{verbatim}
+YYYY-MM-DDTHH_KIND_AR_output_TIME.csv
+(All dates are in UT)
+YYYY=year
+MM=month
+DD=day
+HH=hour
+\end{verbatim}
+The above dates refer to the time at which the short-term forecast is computed and are the starting point of the forecast extended on 4 hours in the future
+
+KIND=One of the following:
+\begin{itemize}
+\item    see\_evol\_time = seeing time evolution
+\item    tau\_evol\_time = tau0 time evolution
+\item    glf\_evol\_time = glf time evolution
+\item    pwv\_evol\_time = pwv time evolution
+\item    rh\_k6\_evol\_time = rh time evolution at 30m a.g.l.
+\item    ws\_k6\_evol\_time = ws time evolution at 30m a.g.l.
+\item    wd\_k6\_evol\_time = wd time evolution at 30m a.g.l.
+\end{itemize}
+TIME=One of the following:
+\begin{itemize}
+\item    night = night forecasts
+\item    day = day forecast
+\end{itemize}
+ % FINO A QUI TUTTO BENE
+
+FILE HEADER:
+\begin{itemize}
+\item        2 comment lines:
+  \begin{itemize}
+  \item                BUFFER LENGTH = X, DATA AGE(s) = Y --> X is the number of past days/nights considered for the computation of the forecast (minimum 2, maximum 5)
+                                                       Performances for the AR in Masciadri et al. 2023 have been calculated for X=5.
+                                                       Y is how old is the last measurement (in seconds) at COMPUTE TIME  !!!!!!!!   XXXXXXX  !!!!!!!
+  \item                COMPUTE TIME = YYYY-MM-DDTHH:mm:ss  ---> time at which the forecast is computed up to minute (mm) and second (ss)
+  \end{itemize}
+\item        header line for the 2 columns (each file has 2 columns)
+  \begin{itemize}
+  \item                Forecast time (\%Y-\%m-\%dT\%H:\%M:\%S) = time for which the forecast refers to (extended up to 4 hours from COMPUTE TIME)
+  \item                PARAMETER = the parameter which is forecasted (seeing, tau0, rh, etc...)
+  \end{itemize}
+\end{itemize}
+%
+
+\begin{verbatim}
+EXAMPLE OUTPUTS:
+2023-05-23T09_glf_evol_time_AR_output_night.csv
+2023-05-23T09_pwv_evol_time_AR_output_night.csv
+2023-05-23T09_rh_k6_evol_time_AR_output_night.csv
+2023-05-23T09_see_evol_time_AR_output_night.csv
+2023-05-23T09_tau_evol_time__AR_output_night.csv
+2023-05-23T09_wd_k6_evol_time_AR_output_night.csv
+2023-05-23T09_ws_k6_evol_time_AR_output_night.csv
+\end{verbatim}
+MEASUREMENTS REFERENCE:
+\begin{itemize}
+\item Seeing reference observations: DIMM
+\item Tau and glf reference observations: MASS
+\item Water vapor reference observations: LHATPRO (A)
+\item Relative humidity, wind speed and direction are taken from the sensors at 30m
+\end{itemize}
+All obsrvations come from \href{http://archive.eso.org/cms/eso-data/ambient-conditions/paranal-ambient-query-forms.html}{the archive eso-data website}
+%
+PS: the convention used for the forecast is described in Masciadri et al. 2023-Session 3. When we compute for example the forecast at 1h it includes all values between 0h and 1h. If we consider the forecast at 2h we take all values between 1h and 2h. And so on.
+%

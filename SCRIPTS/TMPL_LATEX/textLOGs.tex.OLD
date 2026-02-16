@@ -1,0 +1,33 @@
+\section{WP\_ESO\_obs}
+\label{sect:2}
+
+
+Table \ref{tab:LOGs} reports the status of success rate in carrying out a complete forecast. Different potential sources of failures related to the operations are taken into account. Tables \ref{tab:LOGs} monitors the robustness of the automatic forecast system. \\ \\
+\noindent
+Each item in the first column starts with a label that indicates the origin of the 'potential' problem. Labels are: ECMWF, ESO, FATE. The success rate for the current month is calculated by the number of success cases divided by the number of days in a month. The success rate for the current incremental month is calculated by the number of success cases divided by the number of days in the number of months covered since the operation starting date up to the current month. The operations starting date is YYYYMMDD. The success rate is calculated using Eq.\ref{eq_eso_obs}:\\  \\
+\begin{equation}
+1- M/E
+\label{eq_eso_obs}
+\end{equation}
+where M is the number of failures and E is the number of full days.\\ \\
+\noindent
+{\bf LEGENDA}\\ \\
+\noindent
+{\bf - ECMWF - ECMWF initialisation data transmission}: missing initialisation data coming from ECMWF that are supposed to be present in the servers 1a\footnote{See tech-note-20221019-001} and 1b in specific temporal windows on 24h. Server 1a is the main server located in ESO-Santiago (Chile), server 1b is the back-up server located in ESO-Garching (Germany). \\ \\
+\noindent
+{\bf - ESO: ftp access ESO - INPUT}: problem in the network connection. We consider a failure = 1 when initialisation data can not be downloaded in the temporal windows dedicated for carrying out the forecast for a full day (24h time scale) (contract Art.7.1).\\ \\
+\noindent
+{\bf - ESO:  ftp access ESO - OUTPUT}: problem in the network connection.We consider a failure =1 when delivery data can not be upload on the main and back-up server within the time indicated in the technical specification. More precisely: two hours before the sunrise and the sunset (contract Art.7.1). \\ \\
+\noindent
+{\bf - FATE:  networks}:  failure on networks (main and back-up) in LaMMA. We consider a failure = 1 when the main network and the back-up network have problems that do not allow the expected delivery on a full day. \\ \\
+\noindent
+{\bf - ESO  server INPUT problem}: server presenting bad operation. We have a failure = 1 when the server receiving the ECMWF data-set presents problems on a time scale of a full day. \\ \\
+\noindent
+{\bf - ESO - server OUPUT problem}: server presenting bad operation. We have a failure = 1 when the server receiving the delivery data-set from FATE presents problems on a time scale of a full day.  \\ \\
+\noindent
+{\bf - FATE - delying or failure in providing deliverables}:  missing deliveries. We have a failure = 1 when deliveries are not uploaded for a full day (contract Art. 7.1). \\ \\
+
+Tables XX -Table XX show the percentage of real-time observations retrieved from ESO archive daily in real-time calculated on the last month and on the whole period of the operational service starting from the starting date of operations up to the current month. The estimation is done for the night time (Table XX) and day time (Table XX).
+
+The percentage is obtained through Eq.X\ref{eq_eso_obs} where M are the missing observations and E the expected observations. The expected observations are calculated considering the measurements ideally extended between the sunset and sunrise (night) and sunrise and sunset (day) with resampled data on 5 minutes time scale. The choice of 5 minutes is the largest possible $\Delta(T)$ that allows to provide a forecast at short time scale (AR) as conceived in this project.
+

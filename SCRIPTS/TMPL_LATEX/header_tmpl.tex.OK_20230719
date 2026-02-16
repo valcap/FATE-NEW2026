@@ -1,0 +1,65 @@
+\documentclass[11pt,english]{article}
+\pagenumbering{arabic}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{subfig}
+%\usepackage{auto-pst-pdf}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage[hmargin={0.8cm,1.2cm},vmargin=1.2cm]{geometry}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\renewcommand*\familydefault{\sfdefault}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\FrontRule}{\rule{9cm}{0.2mm}}
+\usepackage{datetime}
+% packages for headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{60pt}
+\fancyhead{}
+\fancyhead[C]{\textbf{FATE - Monthly report}}
+\fancyhead[L]{
+\begin{tabular}{lll}
+{\small Doc.No} & {\small :} & {\small FATE-001}   \\
+{\small Hour}   & {\small :} & {\small 1.0}        \\
+{\small Date}   & {\small :} & {\small 31-01-2024} \\
+\end{tabular}
+}
+%\fancyhead[C]{Chapter \thechapter}
+%\fancyhead[R]{Section \thesection}
+%\usepackage{lastpage}
+%\fancyfoot[C]{Page\ \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{figure}
+\begin{center}
+\parbox{5.5cm}{\includegraphics[width=4.5cm]{/home/report/SCRIPTS/LOGOS/INAF_Arcetri_colore}}
+\parbox{5.5cm}{\large{\textbf{FATE MONTHLY REPORT}}}
+\parbox{5.5cm}{\includegraphics[width=4.5cm]{/home/report/SCRIPTS/LOGOS/logoLaMMA}}
+\end{center}
+\end{figure}
+
+\begin{center}
+\FrontRule \\[0.4cm]
+\Huge{\textbf{FORECAST SYSTEM FOR\\ATMOSPHERE AND TURBULENCE\\at the VERY LARGE TELESCOPE\\}}
+\FrontRule \\[1.4cm]
+\Large{{Performance assessment \\\today}}
+\end{center}
+
+\begin{center}
+\vspace{6cm}
+\parbox{4.5cm}{\includegraphics[width=4.5cm]{/home/report/SCRIPTS/LOGOS/fate_logo_11def}}
+\\\vspace{2cm}\normalsize{PO102958/ESO/20/95952/FLAB}
+\end{center}
+
+\newpage
+\tableofcontents
+\clearpage
+

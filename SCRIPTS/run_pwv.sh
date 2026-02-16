@@ -32,7 +32,7 @@ else
 fi
 
 # Start
-notice "Start of "`basename $0`
+notice "+ + + Start of "`basename $0`" + + +"
 
 #########################################
 ## Working on pwv
@@ -95,7 +95,7 @@ if [ ! -e ${JOB}.f90 ]; then
 fi
 IDELTA=10
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
+#ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in the current directory"; exit 1
 fi
@@ -266,7 +266,7 @@ if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
+#ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -398,8 +398,6 @@ rm -f $FIGS_ROOT_DIR/pippo1.ps $FIGS_ROOT_DIR/pippo2.ps
 if [ ! -e $WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth} ]; then
   error "$WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth} not produced"
 fi
-##### AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa
-exit
 
 
 ##################################################################################

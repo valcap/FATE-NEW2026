@@ -1,0 +1,60 @@
+\documentclass[11pt,english]{article}
+\pagestyle{plain}
+\pagenumbering{arabic}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{subfig}
+%\usepackage{auto-pst-pdf}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage[hmargin={0.8cm,1.2cm},vmargin=1.2cm]{geometry}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\renewcommand*\familydefault{\sfdefault}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+% packages for headers and footers
+\usepackage{fancyhdr}
+%\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyfoot[C]{Page\ \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+\begin{figure}
+\begin{center}
+\hspace{1.5cm}
+\parbox{5.5cm}{\includegraphics[width=2.2cm]{/home/report/SCRIPTS/LOGOS/logoLaMMA}}
+\hspace{.3cm}
+\parbox{5.5cm}{\includegraphics[width=2.2cm]{/home/report/SCRIPTS/LOGOS/fate_logo_11def}}
+\hspace{.3cm}
+\parbox{5.5cm}{\includegraphics[width=2.2cm]{/home/report/SCRIPTS/LOGOS/INAF_Arcetri_colore}}
+\hspace{.1cm}
+\vspace{1.2cm}
+\end{center}
+\end{figure}
+
+\begin{center}
+\HRule \\[0.4cm]
+%\Huge{\textbf{Progetto FATE LaMMA-OAA per ESO @ Cerro Paranal etcetcetc\ldots}}
+\Huge{\textbf{Forecast system for the turbulence and meteorology at the Paranal Observatory}}
+\\[0.4cm]
+\LARGE{\textbf{Performance assessment - monthly report}}
+\HRule \\[0.4cm]
+\end{center}
+
+\begin{center}
+\vspace{2cm}\Huge{Issued: TODAYDOWSTRING, TODAYSTRING\\ TODAYTIMESTRING Paranal local time}
+\HRule \\[0.1cm]
+\end{center}
+
+%\begin{center}
+%\HRule \\[0.1cm]
+%\tableofcontents
+%\HRule \\[0.1cm]
+%\end{center}
+%\newpage
+\clearpage
+

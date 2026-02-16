@@ -1,0 +1,258 @@
+%% Version 2.1 (pdflatex ready)
+%%
+%% L.Fini 2004-2009
+%
+%% \documentclass[]{article}    % use this for latex2e
+%% \usepackage{lbtadopt}            % use this for latex2e
+%
+% The user must make a few adjustments manually
+%  for proper formatting:
+%
+% 1. Section titles should be in upper case.
+% 2. Title, subsection, subsubsection, etc. 
+%    should be in lower case except for the first letter
+%    and proper nouns or acrynyms.
+% 3. Format authors as follows
+%    \author{author1 \\[12pt]
+%            affiliation\\
+%            affiliation\\[12pt]
+%            author2 \\[12pt]
+%            affiliation\\
+%            affiliation\\[12pt]}
+%
+% ------------------------------------------------------------
+
+%% type out specified font size
+\if0\@ptsize\typeout{ten point}\fi
+\if1\@ptsize\typeout{eleven point}\fi
+\if2\@ptsize\typeout{twelve point}\fi
+
+%% page format
+\oddsidemargin -5mm \evensidemargin -5mm \topmargin 0mm 
+\topmargin -10mm
+\headheight 25mm 
+\headsep 10mm     %  
+%\textheight 23.0cm
+\textheight 22.5cm
+\textwidth 17cm
+\bibliographystyle{unsrt}
+
+\usepackage{graphicx,fancyhdr}
+
+\parskip 1ex plus 1ex minus 0.3ex   % spacing between paragraphs
+
+%%  space for floats - figures and tables
+\floatsep 0.9ex plus 0.3ex minus 0.6ex 
+\textfloatsep 4ex plus 3ex minus 1.5ex
+\renewcommand{\textfraction}{0.10} 
+\renewcommand{\floatpagefraction}{0.60} 
+\renewcommand{\topfraction}{0.90} 
+\renewcommand{\bottomfraction}{0.90} 
+\setcounter{totalnumber}{3} 
+\setcounter{topnumber}{2} 
+\setcounter{bottomnumber}{2} 
+
+
+%%%% useful definitions %%%%
+\def\skiplinehalf{\medskip\\}
+\def\skipline{\\}
+\def\exspace{\vspace{1ex}}
+% superscript in italics, 
+% to cross reference author and affiliations
+\def\supit#1{\raisebox{0.8ex}{\small\it #1}\hspace{0.05em}}  
+
+
+%%%%  define \ample font size %%%%
+%% 10% larger than \normalsize for 10 pt, 
+%% but smaller than \large
+%%LF \if0\@ptsize
+%%LF    \def\ample{\@setsize\large{12pt}\xipt\@xipt}
+%%LF \else
+   \def\ample{\large}
+%%LF \fi  
+
+%%%% define title aspects %%%%
+\def\titlefont{\LARGE\bf}  %% insurance
+%%LF \if0\@ptsize
+%%LF    \font\titlefont = cmbx12 at 16truept  % 10pt
+%%LF \else
+%%LF    \def\titlefont{\LARGE\bf}             % other
+%%LF \fi
+
+\def\title#1{\gdef\@title{\titlefont #1}}
+\def\pagetitle#1{\gdef\@pagetitle{#1} }
+\def\version#1{\gdef\@version{#1}}
+\def\docnumber#1{\gdef\@docnumber{#1}}
+\renewcommand{\date}[1]{\gdef\@date{#1}}
+
+\def\maketitle{\par 
+ \begingroup
+   \def\thefootnote{\noindent\fnsymbol{footnote}}%
+   \def\@makefnmark{\hbox
+       to\z@{$\m@th^{\@thefnmark}$\hss}}%
+   \if@twocolumn
+     \twocolumn[\@maketitle]%
+     \else \newpage
+     \global\@topnum\z@
+     \@maketitle \fi     
+     \@thanks
+ \endgroup
+ \let\maketitle\relax
+ \let\@maketitle\relax
+ \gdef\@thanks{}\gdef\@author{}\gdef\@title{}\let\thanks\relax
+
+}
+
+\def\@maketitle{\newpage
+ \null
+% move title to top of page 
+\vspace{-20mm}
+
+\noindent
+
+%% NOTE: in the following includes, pdfLaTeX will use *.png, while LaTeX
+%% will use *.eps
+
+\thispagestyle{empty}
+\setlength{\unitlength}{1mm}
+\begin{picture}(170,30)(8,0)
+%\put(0,10){\framebox(30,30){\includegraphics[width=28mm,height=38mm]{INAF_new_HR}}}
+%\put(0,10){\framebox(30,30){\includegraphics[width=28mm,height=28mm]{logo_circolare_ao_arcetri.png}}}
+\put(0,10){\framebox(41,30){\includegraphics[width=45mm,height=27mm]{/home/report/SCRIPTS/LOGOS/INAF_Arcetri_colore}}}
+%\put(0,10){\framebox(41,30){\includegraphics[width=62mm,height=34mm]{inaf-fondo-trasparente.png}}}
+%\put(0,10){\framebox(41,30){\includegraphics[width=38mm,height=14mm]{inaf_ita_eng.png}}}
+
+
+
+
+\put(42,10){\framebox(96,14)[l]{
+        \makebox(5,0){}  \begin{tabular}{l@{ : }l}
+                            Doc.No~~ & \@docnumber  \\
+                            Version    &  \@version \\
+                            Date     &  \@date
+                         \end{tabular} } }
+\put(42,25){\framebox(96,15){
+           \shortstack{\sffamily\Large\bfseries FATE \\[1mm]
+%                      \sffamily\large\bfseries\normalsize{ Monthly Report}}} }
+                      \sffamily\large\bfseries\large{ MONTHLY REPORT}}} }
+%           \sffamily\large\bfseries\normalsize{ Forecast system for Atmosphere and Turbulence for ESO}}} }
+%\put(146,10){\framebox(30,30){\includegraphics[width=24mm,height=28mm]{logo_alta_9_trasp.png}}}
+\put(139,10){\framebox(41,30){\includegraphics[width=38mm,height=14mm]{/home/report/SCRIPTS/LOGOS/logoLaMMA}}}
+
+\end{picture}
+
+
+
+\par
+
+
+%% Write the title
+\vspace{5cm}
+
+\begin{center}
+\parbox{0.75\textwidth}{\centering 
+\hrule
+\vspace{1cm}
+
+{\setlength{\baselineskip}{4.3ex} \@title \par}
+\vspace{1cm}
+\hrule
+
+
+%% Write the authors
+ \vskip 5mm 
+ {\ample   \@author }%
+ \vskip 1.5ex	
+ \par
+}
+\end{center}
+\vfill
+
+%\vspace{3cm}
+
+\begin{center}
+%\includegraphics[width=24mm,height=28mm]{logo_alta_9_trasp.png}
+%\includegraphics[width=26mm]{lbt-transp.png}
+\includegraphics[width=35mm]{/home/report/SCRIPTS/LOGOS/fate_logo_11def}
+\end{center}
+
+
+
+
+
+\begin{center}
+   {\small  PO102958/ESO/20/95952/FLAB \\
+%                 {\tt http://forot.arcetri.astro.it/}
+}
+\end{center}
+\newpage
+\quad\vspace{30mm}
+%% Define headings for the rest of the document
+
+%%\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+\rhead{}
+\chead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\lhead{
+\setlength{\unitlength}{1mm}
+\protect\begin{picture}(170,13)
+\put(-5,0){\protect\framebox(45,13)[l]{
+                 \protect\begin{tabular}{l@{: }l}
+                    {\footnotesize Doc.No~} & {\footnotesize \@docnumber}  \\
+                    {\footnotesize Version}   & {\footnotesize \@version} \\
+                    {\footnotesize Date}    & {\footnotesize \@date}
+             \protect\end{tabular} } }
+\put(34,1){\sffamily\small \protect\thepage}
+\put(41,0){\protect\framebox(138,13)[l]
+           {\sffamily\large\bfseries ~~\@pagetitle} }
+\protect\end{picture}
+}
+\renewcommand{\thepage}{\arabic{page}}
+}
+
+\pagestyle{fancy}
+
+%%%%% Special sections %%%%%
+\def\abstract{\quad \vspace{3cm}
+\renewcommand{\thepage}{}   %% Do no number abstract page
+\begin{center}
+{\large \bf ABSTRACT} \par \vspace{5mm}
+\begin{minipage}{0.75\textwidth} }
+
+\def\endabstract{\end{minipage}\end{center}\newpage \setcounter{page}{1}
+\quad\vspace{30mm}
+\renewcommand{\thepage}{\arabic{page}}   %% Number report pages
+}
+
+\def\contents{
+\renewcommand{\thepage}{}
+\tableofcontents
+%\newpage
+\renewcommand{\thepage}{\arabic{page}}
+\quad\vspace{30mm}
+\setcounter{page}{1}
+}
+\def\appndx{
+%\newpage
+%\quad\vspace{20mm}
+\appendix
+}
+
+\def\references{
+\newpage
+%\quad\vspace{20mm}
+\begin{thebibliography}{99}
+}
+
+\def\endreferences{
+\end{thebibliography}
+}
+
+\def\bibtexref#1{
+\newpage
+\quad\vspace{20mm}
+\bibliography{#1}
+}

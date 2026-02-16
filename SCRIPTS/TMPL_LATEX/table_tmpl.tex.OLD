@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+\begin{table}[]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{VARIABLE}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{BIAS}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{RMSE}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{SD}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{RMSE-PERS}}\\\hline
+\cellcolor[HTML]{C0C0C0}WS  & WSBIAS                                & WSRMSE                                & WSSD  & WSPERSRMSE \\
+\cellcolor[HTML]{C0C0C0}WD  & WDBIAS                                & WDRMSE                                & WDSD  & WDPERSRMSE \\
+\cellcolor[HTML]{C0C0C0}RH  & RHBIAS                                & RHRMSE                                & RHSD  & RHPERSRMSE \\
+\cellcolor[HTML]{C0C0C0}PWV & PWVBIAS                               & PWVRMSE                               & PWVSD & PWVPERSRMSE \\
+\cellcolor[HTML]{C0C0C0}SEE & SEEBIAS                               & SEERMSE                               & SEESD & SEEPERSRMSE \\
+\cellcolor[HTML]{C0C0C0}TAU & TAUBIAS                               & TAURMSE                               & TAUSD & TAUPERSRMSE \\
+\cellcolor[HTML]{C0C0C0}GLF & GLFBIAS                               & GLFRMSE                               & GLFSD & GLFPERSRMSE \\
+\hline
+\end{tabular}
+\caption{TABCAPTION}
+\end{center}
+\end{table}

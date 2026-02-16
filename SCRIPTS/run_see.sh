@@ -32,7 +32,7 @@ else
 fi
 
 # Start
-notice "Start of "`basename $0`
+notice "+ + + Start of "`basename $0`" + + +"
 
 #########################################
 ## Working on ws
@@ -83,7 +83,7 @@ if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
+#ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/AR_10min/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt ./$FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in the current directory"; exit 1
 fi
@@ -127,12 +127,9 @@ ${ACC}
 '$FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_${suffix}.ps/cps'
 '$FIGS_ROOT_DIR/stoca1.ps/cps'
 EOF
-echo $WRKDIR/${skills_file}_BEFAFT_${prefix}_${ACC}
   rm -f out_scatter_for_python_bef.dat out_scatter_for_python_aft.dat
   rm -f $FIGS_ROOT_DIR/stoca1.ps
 done
-echo $WRKDIR/${skills_file}_BEFAFT_${prefix}_${ACC}
-echo $FIGS_ROOT_DIR/${prefix}_sim_mnh_ar_dimm_${STARTMINUTE}_${ENDMINUTE}_BEF_${suffix}.ps/cps
 
 # Loop over accuracy and MAXSEE=999. for AFT DATA ONLY (i.e. with AR (1H))
 for ACC in 0.0 0.24
@@ -315,7 +312,7 @@ if [ ! -e ${JOB}.f90 ]; then
   echo "ops ${JOB}.f90 is missing"; exit 1
 fi
 FILE_LIST="list_"$prefixUC".txt"
-ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
+#ln -svf /TERASTARMET/FATE_DOCUMENTATION/MONTHLY_REPORT_ELENA_TO_VALERIO_UPGRADE_FATE_2025_07/PROG/TEST_AR/PERSIST/${FCST_DAY}${FCST_LEN}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $FILE_LIST
 if [ ! -e $FILE_LIST ]; then
   echo "ops $FILE_LIST is missing in "`pwd`; exit 1
 fi
@@ -465,8 +462,6 @@ rm -f ${JOB}.exe
 if [ ! -e $WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth} ]; then
   error "$WRKDIR/${skills_file}_PER_${prefix}_${skills_file_lastmonth}} not produced"
 fi
-### AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-exit
 
 ##################################################################################
 ##################################################################################

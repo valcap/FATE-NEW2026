@@ -1,18 +1,90 @@
 #!/bin/bash
 
-fileenv='/home/report/NEW2026/SCRIPTS/fate-report-astro.env'
-for goal in day night
+##############
+# Global variables
+##############
+export LC_TIME="en_US.UTF-8"
+fileenv=$HOME'/NEW2026/SCRIPTS/fate-report-astro.env'
+
+##############
+# Source of env file
+##############
+if [ ! -e $fileenv ]; then
+  echo "ops $fileenv does not exist"
+  exit 1
+else
+  source $fileenv
+fi
+
+##############
+# HOUSEKEEPING
+##############
+rm -f $WRKDIR/*.{tex,aux,toc,sty,out,log}
+rm -f $WRKDIR/main.{tex,aux,toc,sty,out,log,pdf}
+rm -f $WRKDIR/annex.{tex,aux,toc,sty,out,log,pdf}
+rm -f $WRKDIR/*.png
+rm -f $WRKDIR/skills_BEFAFT*
+rm -f $WRKDIR/skills_PER*
+for dd in night1 day1 night2 day2 night3 day3
 do
-  for var in rh ws wd pwv
-  do
-    sh run_${var}.sh $fileenv $goal 1
-  done
+  if [ -d $WRKDIR/$dd ]; then
+    rm -fr $WRKDIR/$dd/*
+  else
+    mkdir -p $WRKDIR/$dd
+  fi
 done
 
-for var in see tau glf
+########
+# NIGHT1
+########
+fcst_target=night
+fcst_length=1
+echo "+++++++++++++++++++++++"
+echo "RUNNING ${fcst_target} ${fcst_length}"
+echo "+++++++++++++++++++++++"
+for prefix in rh ws wd pwv see tau glf
 do
-  sh run_${var}.sh $fileenv night 1
+  prefixUC="${prefix^^}"
+  # Link list file for the whole period and the last month
+  ### DEV da cambiare nella procedura operativa
+  ln -sf $LIST_DIR_AR/${fcst_target}${fcst_length}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $PROG_ROOT_DIR/list_${prefixUC}.txt
+  ln -sf $LIST_DIR_PER/${fcst_target}${fcst_length}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $PERS_ROOT_DIR/list_${prefixUC}.txt
+  ln -sf /TERASTARMET/MONTHLY_REPORT_VALERIO_TO_ELENA/TEMP/AR/list_${prefixUC}_LastMonth.txt $PROG_ROOT_DIR/list_${prefixUC}_${skills_file_lastmonth}.txt
+  ln -sf /TERASTARMET/MONTHLY_REPORT_VALERIO_TO_ELENA/TEMP/PER/list_${prefixUC}_LastMonth.txt $PERS_ROOT_DIR/list_${prefixUC}_${skills_file_lastmonth}.txt
+  ### ENDDEV
+  # actual start of procedure
+  sh run_${prefix}.sh $fileenv ${fcst_target} ${fcst_length}
 done
+sh run_skills.sh $fileenv ${fcst_target} ${fcst_length}
 
+########
+# DAY1
+########
+fcst_target=day
+fcst_length=1
+echo "+++++++++++++++++++++++"
+echo "RUNNING ${fcst_target} ${fcst_length}"
+echo "+++++++++++++++++++++++"
+for prefix in rh ws wd pwv
+do
+  prefixUC="${prefix^^}"
+  # Link list file for the whole period and the last month
+  ### DEV da cambiare nella procedura operativa
+  ln -sf $LIST_DIR_AR/${fcst_target}${fcst_length}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $PROG_ROOT_DIR/list_${prefixUC}.txt
+  ln -sf $LIST_DIR_PER/${fcst_target}${fcst_length}/list_${prefixUC}_${GG}_${HH}_2024_aug.txt $PERS_ROOT_DIR/list_${prefixUC}.txt
+  ln -sf /TERASTARMET/MONTHLY_REPORT_VALERIO_TO_ELENA/TEMP/AR/list_${prefixUC}_LastMonth.txt $PROG_ROOT_DIR/list_${prefixUC}_${skills_file_lastmonth}.txt
+  ln -sf /TERASTARMET/MONTHLY_REPORT_VALERIO_TO_ELENA/TEMP/PER/list_${prefixUC}_LastMonth.txt $PERS_ROOT_DIR/list_${prefixUC}_${skills_file_lastmonth}.txt
+  ### ENDDEV
+  # actual start of procedure
+  sh run_${prefix}.sh $fileenv ${fcst_target} ${fcst_length}
+done
+sh run_skills.sh $fileenv ${fcst_target} ${fcst_length}
+
+
+# compile latex document
+sh compile_report.sh $fileenv
+ 
+########
 exit 1
+########
 

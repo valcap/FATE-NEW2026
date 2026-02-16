@@ -1,0 +1,20 @@
+\begin{references}
+
+\bibitem{masciadri2020}
+Masciadri, E., Turchi, A., Martelloni, G., 2020, MNRAS, 492, 140
+\bibitem{masciadri2023}
+Masciadri, E., Lascaux, F., Fini, L., 2023, MNRAS, 523, 3487
+\bibitem{tech_note}
+$\href{FATE-repository:tech\_note\_20240219\_AR\_tail\_effect.pdf}{FATE-repository:tech\_note\_20240219\_AR\_tail\_effect.pdf}$
+\bibitem{for_scheme} 
+$\href{FATE-repository:legenda\_fate\_forecast\_scheme.pdf}{FATE-repository:legenda\_fate\_forecast\_scheme.pdf}$ 
+\bibitem{lascaux2015}
+Lascaux, F., Masciadri, E., Fini, L., 2015, MNRAS, 449, 1664
+\bibitem{turchi2020}
+Turchi, A., Masciadri, E., Pathack, P., Kasper, M., 2020, 497, 4910
+\bibitem{commis_prob}
+$\href{FATE-repository:commissioning\_bias\_rmse\_sd\_2024\_02\_19_problems\_AR.pdf}{FATE-repository:commissioning\_bias\_rmse\_sd\_2024\_02\_19\_problems\_AR.pdf}$
+\bibitem{tech_specif}
+$\href{FATE-repository:technical\_specifications\_2023\_12\_14.pdf}{FATE-repository:technical\_specifications\_2023\_12\_14.pdf}$
+
+\end{references}

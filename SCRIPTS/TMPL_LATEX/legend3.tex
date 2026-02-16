@@ -1,0 +1,110 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\HRule \\[0.4cm]
+VALIDATION TEST (NO AR=autoregression)
+\HRule \\[0.4cm]
+\end{center}
+
+There are deterministic and probabilistic forecasts as requested by ESO. For all the parameters (with exception of the cloud cover) we treat the outputs as:
+\begin{itemize}
+\item         deterministic OUTPUTS: one file collecting the forecasts of all the parameters 
+             
+\item probabilistic OUTPUTS: individual files for each parameter 
+\end{itemize}
+
+
+For the cloud cover the deterministic and probabilistic forecasts are both in the same file as this parameter has to be treated differently from the other parameters according to the SOW.
+
+
+FILE NAME FORMAT:
+
+\verb+AAAAAAAA-BB_CCCCCCCC-DDDD_EEEEEEEE-FFFF_TYPE_KIND_NIGHT.csv+
+(All dates are in UT)
+\begin{itemize}
+\item AAAAAAAA= date in which the initialisation and forcing data for the mesoscale model are calculated (date format: YYYYMMDD)
+\item BB=hour in which initialisation and forcing data are calculated (date format: HH)
+\item CCCCCCCC=Date corresponding to the start of the simulated period i.e.to the sunrise (date format: YYYYMMDD)
+\item DDDD=Hour and minute associated to the date CCCCCCCC (hour format: HHMM)
+\item EEEEEEEE=Date corresponding to the end of simulated period i.e. to the sunset (date format: YYYYMMDD)
+\item FFFF=Hour and minute associated to the date EEEEEEEE (hour format: HHMM)
+\end{itemize}
+
+
+TYPE=Kind of forecast ---> 
+\begin{itemize}
+\item probLONG=probability that a forecast is included in specific ranges of values
+\item detLONG=determinist forecasts
+\item probdetLONG= probabilist and deterministic forecast for the cloud cover (the cloud cover has to be treated differently from the other parameters - see SOW)
+\end{itemize}
+
+
+PS: The term LONG is associated to the forecast delivered at maximum 2 hours before the sunset (this is the time within which we have to provide the forecast on a time scale of 1, 2 and 3 nights according to the ESO documentation - Enclosure 2-2). These are the forecast requested for the Validation test.
+
+
+KIND=One of the following:
+\begin{itemize}
+\item cloud=deterministic and probabilistic forecast of the cloud cover that is treated differently from all the other parameters (see SOW).
+\item standardALL=determinist forecast produced by Astro-Meso-NH in standard method related to *all* the parameters: ws, wd, rh, pwv.
+\item wd,ws = for the probabilistic forecasts we have used the specific ranges/intervals/thresholds for each parameter indicated in SOW (September 2020 version):
+\begin{itemize}
+\item pwv: section 4.2.7
+\item rh: section 4.2.6:
+\item Wd: section 4.2.5
+\item Ws: section 4.2.4
+\end{itemize}
+\end{itemize}
+
+
+DAY=One of the following:
+\begin{itemize}
+\item day1=relative to the forecast on a time scale of 1d in the future (timestep=10m)
+\item day2=relative to the forecast on a time scale of 2d in the future (timestep=1h)
+\item day3=relative to the forecast on a time scale of 3d in the future (timestep=3h)
+\end{itemize}
+
+
+EXAMPLE OUTPUTS (each day has 18 outputs -> 6 outputs x 3 days):
+\begin{verbatim}
+1. 20210111-00_20210111-2339_20210112-1000_detLONG_standardALL_day1.csv (7 figures)
+2. 20210111-00_20210111-2339_20210112-1000_probLONG_pwv_day1.csv (1 figure)
+3. 20210111-00_20210111-2339_20210112-1000_probLONG_rh_night1.csv  (1 figure)
+4. 20210111-00_20210111-2339_20210112-1000_probLONG_wd_night1.csv. (1 figure)
+5. 20210111-00_20210111-2339_20210112-1000_probLONG_ws_night1.csv. (1 figure)
+6. 20210111-00_20210111-2339_20210112-1000_probdetLONG_cloud_night1.csv (2 figures)
+7. 20210111-00_20210112-2339_20210113-1001_detLONG_standardALL_night2.csv
+8. 20210111-00_20210112-2339_20210113-1001_probLONG_pwv_night2.csv
+9. 20210111-00_20210112-2339_20210113-1001_probLONG_rh_night2.csv
+10. 20210111-00_20210112-2339_20210113-1001_probLONG_wd_night2.csv
+11. 20210111-00_20210112-2339_20210113-1001_probLONG_ws_night2.csv
+12. 20210111-00_20210112-2339_20210113-1001_probdetLONG_cloud_night2.csv
+13. 20210111-00_20210113-2339_20210114-1001_detLONG_standardALL_night3.csv
+14. 20210111-00_20210113-2339_20210114-1001_probLONG_pwv_night3.csv
+15. 20210111-00_20210113-2339_20210114-1001_probLONG_rh_night3.csv
+16. 20210111-00_20210113-2339_20210114-1001_probLONG_wd_night3.csv
+17. 20210111-00_20210113-2339_20210114-1001_probLONG_ws_night3.csv
+18. 20210111-00_20210113-2339_20210114-1001_probdetLONG_cloud_night3.csv
+\end{verbatim}
+
+FILES HEADER
+
+The headers are mostly auto-esplicative.
+
+We add here some more infos:
+\begin{itemize}
+\item  The files reporting the probability that seeing and tau0 fall within specific categories are indicated with Category 1, 2, 3, 4, 5, 6 and 7 according to file readme\_fig4.png and according to the SOW (September update).
+\item According to SOW, section 4.1.6, the cloud cover is treated differently than the other parameters. Files whose name is *probdet\_cloud* include the determinist and probabilistic forecast according to Section 4.1.6 of SOW and the digital document AD2.
+\item According to SOW - section 4.2.6 we include the probability that the wind direction blows from N, S, W and E. Meteo Convention: 0 deg = North, 90 deg = East. In our analysis we divided the 360 degrees in 4 sectors: "North": means that the wind direction is included between -45 degrees and + 45 degrees. Same logic for the others cardinal directions.
+\item  The ranges for the calculation of the probability that all the atmospheric and astroclimatic parameters assume specific values match tables reported in SOW.
+\end{itemize}
+
+
+%\begin{itemize}
+%\item  The files reporting the probability that seeing and tau0 fall within specific categories are indicated with Category 1, 2, 3, 4, 5, 6 and 7 according to file readme_fig4.png and according to the SOW (September update).
+%\item According to SOW, section 4.1.6, the cloud cover is treated differently than the other parameters. Files whose name is *probdet_cloud* include the determinist and probabilistic forecast according to Section 4.1.6 of SOW and the digital document AD2.
+%\item According to SOW - section 4.2.6 we include the probability that the wind direction blows from N, S, W and E.  Meteo Convention: 0 deg = North 90 deg = East. In our analysis we divided the 360 degrees in 4 sectors: "North": means that the wind direction is included between -45 degrees and + 45 degrees. Same logic for the others cardinal directions. 
+%\item The ranges for the calculation of the probability that all the atmospheric and astroclimatic parameters assume specific values match tables reported in SOW.
+%\end{itemize}
+
+
+
