@@ -6,6 +6,9 @@ implicit none
 
 INTEGER,PARAMETER                    :: NbMinute=1080 ! 18h=1080minutes
 REAL,PARAMETER                       :: NOVAL=0.
+REAL,PARAMETER                       :: THRES1=45.
+REAL,PARAMETER                       :: THRES2=135.
+REAL,PARAMETER                       :: THRES3=225.
 CHARACTER(180),ALLOCATABLE,DIMENSION(:)   :: CFILE_DATE,CFILE_DATE_WS
 CHARACTER(8),ALLOCATABLE,DIMENSION(:)     :: DATE
 CHARACTER(180)                       :: PUBEL,PGPLOT1,PGPLOT2,CFILE_LIST_NIGHTS
@@ -303,20 +306,20 @@ ENDDO
 !
 CALL BIAS_RMSE_SIGMA_WIND_DIRECTION(WD_OBS_1D,WD_MOD_BEF_1D,NbLines_TOT_1D,BIAS_MOD_BEF,RMSE_MOD_BEF, &
          SIGMA_MOD_BEF,INC_MOD_BEF,NOVAL)
-PRINT*,'BIAS_MOD_BEF=',BIAS_MOD_BEF
-PRINT*,'RMSE_MOD_BEF=',RMSE_MOD_BEF
-PRINT*,'SIGMA_MOD_BEF=',SIGMA_MOD_BEF
+WRITE (*,1002) 'LOGINFO BIAS_WD_MOD_BEF=',BIAS_MOD_BEF
+WRITE (*,1002) 'LOGINFO RMSE_WD_MOD_BEF=',RMSE_MOD_BEF
+WRITE (*,1002) 'LOGINFO SIGMA_WD_MOD_BEF=',SIGMA_MOD_BEF
 PRINT*,'INC_MOD_BEF=',INC_MOD_BEF
-PRINT*,'NbLines_TOT=',NbLines_TOT_1D
+PRINT*,'LOGINFO NbLines_TOT=',NbLines_TOT_1D
 WRITE(BIAS_MOD_BEFc,'(f5.2)')BIAS_MOD_BEF
 WRITE(RMSE_MOD_BEFc,'(f5.2)')RMSE_MOD_BEF
 WRITE(SIGMA_MOD_BEFc,'(f5.2)')SIGMA_MOD_BEF
 !
 CALL BIAS_RMSE_SIGMA_WIND_DIRECTION(WD_OBS_1D,WD_MOD_AFT_1D,NbLines_TOT_1D,BIAS_MOD_AFT,RMSE_MOD_AFT, &
          SIGMA_MOD_AFT,INC_MOD_AFT,NOVAL)
-PRINT*,'BIAS_MOD_AFT=',BIAS_MOD_AFT
-PRINT*,'RMSE_MOD_AFT=',RMSE_MOD_AFT
-PRINT*,'SIGMA_MOD_AFT=',SIGMA_MOD_AFT
+WRITE (*,1002) 'LOGINFO BIAS_WD_MOD_AFT=',BIAS_MOD_AFT
+WRITE (*,1002) 'LOGINFO RMSE_WD_MOD_AFT=',RMSE_MOD_AFT
+WRITE (*,1002) 'LOGINFO SIGMA_WD_MOD_AFT=',SIGMA_MOD_AFT
 PRINT*,'INC_MOD_AFT=',INC_MOD_AFT
 PRINT*,'NbLines_TOT=',NbLines_TOT_1D
 WRITE(BIAS_MOD_AFTc,'(f5.2)')BIAS_MOD_AFT
@@ -398,6 +401,10 @@ ENDDO
 PRINT*,'##########################################'
 PRINT*,'######## HIT_RATE for BEF ###########'
 PRINT*,'##########################################'
+write (*,1001) 'LOGINFO THRES1 ',THRES1
+write (*,1001) 'LOGINFO THRES2 ',THRES2
+write (*,1001) 'LOGINFO THRES3 ',THRES3
+
 !
 ! Calcultion of hit-rate using as extreme the first and thrid tertile of the WD
 ! Attention: the hit_rate is calculated only in the case without filter i.e. MAXVALSEE=999.
@@ -405,7 +412,19 @@ PRINT*,'##########################################'
 POD=NOVAL
 TAB_HR=NOVAL
 !CALL HIT_RATE_QUART(WD_OBS_1D_FIT,WD_MOD_BEF_1D_FIT,NbFit,90.,180.,270.,NOVAL,TAB_HR,POD,PC,EBD,.false.)
-CALL HIT_RATE_QUART(WD_OBS_1D_FIT,WD_MOD_BEF_1D_FIT,NbFit,45.,135.,225.,NOVAL,TAB_HR,POD,PC,EBD,.false.)
+CALL HIT_RATE_QUART(WD_OBS_1D_FIT,WD_MOD_BEF_1D_FIT,NbFit,THRES1,THRES2,THRES3,NOVAL,TAB_HR,POD,PC,EBD,.false.)
+write (*,6000) 'LOGINFO CONTTABLE BEF ROW0 X<',THRES1,THRES1,'<X<',THRES2,THRES2,'<X<',THRES3,'X>',THRES3
+write (*,4001) 'LOGINFO CONTTABLE BEF ROW1',int(tab_hr(1,1)),int(tab_hr(1,2)),int(tab_hr(1,3)),int(tab_hr(1,4))
+write (*,4001) 'LOGINFO CONTTABLE BEF ROW2',int(tab_hr(2,1)),int(tab_hr(2,2)),int(tab_hr(2,3)),int(tab_hr(2,4))
+write (*,4001) 'LOGINFO CONTTABLE BEF ROW3',int(tab_hr(3,1)),int(tab_hr(3,2)),int(tab_hr(3,3)),int(tab_hr(3,4))
+write (*,4001) 'LOGINFO CONTTABLE BEF ROW4',int(tab_hr(4,1)),int(tab_hr(4,2)),int(tab_hr(4,3)),int(tab_hr(4,4))
+write (*,1001) 'LOGINFO CONTTABLE BEF POD1 ',POD(1)
+write (*,1001) 'LOGINFO CONTTABLE BEF POD2 ',POD(2)
+write (*,1001) 'LOGINFO CONTTABLE BEF POD3 ',POD(3)
+write (*,1001) 'LOGINFO CONTTABLE BEF POD4 ',POD(4)
+write (*,1001) 'LOGINFO CONTTABLE BEF PC   ',PC
+write (*,1001) 'LOGINFO CONTTABLE BEF EBD  ',EBD
+
 !
 !
 !
@@ -426,7 +445,30 @@ PRINT*,'##########################################'
 POD(:)=NOVAL
 TAB_HR=NOVAL
 !CALL HIT_RATE_QUART(WD_OBS_1D_FIT,WD_MOD_AFT_1D_FIT,NbFit,90.,180.,270.,NOVAL,TAB_HR,POD,PC,EBD,.false.)
-CALL HIT_RATE_QUART(WD_OBS_1D_FIT,WD_MOD_AFT_1D_FIT,NbFit,45.,135.,225.,NOVAL,TAB_HR,POD,PC,EBD,.false.)
+CALL HIT_RATE_QUART(WD_OBS_1D_FIT,WD_MOD_AFT_1D_FIT,NbFit,THRES1,THRES2,THRES3,NOVAL,TAB_HR,POD,PC,EBD,.false.)
+write (*,6000) 'LOGINFO CONTTABLE AFT ROW0 X<',THRES1,THRES1,'<X<',THRES2,THRES2,'<X<',THRES3,'X>',THRES3
+write (*,4001) 'LOGINFO CONTTABLE AFT ROW1',int(tab_hr(1,1)),int(tab_hr(1,2)),int(tab_hr(1,3)),int(tab_hr(1,4))
+write (*,4001) 'LOGINFO CONTTABLE AFT ROW2',int(tab_hr(2,1)),int(tab_hr(2,2)),int(tab_hr(2,3)),int(tab_hr(2,4))
+write (*,4001) 'LOGINFO CONTTABLE AFT ROW3',int(tab_hr(3,1)),int(tab_hr(3,2)),int(tab_hr(3,3)),int(tab_hr(3,4))
+write (*,4001) 'LOGINFO CONTTABLE AFT ROW4',int(tab_hr(4,1)),int(tab_hr(4,2)),int(tab_hr(4,3)),int(tab_hr(4,4))
+write (*,1001) 'LOGINFO CONTTABLE AFT POD1 ',POD(1)
+write (*,1001) 'LOGINFO CONTTABLE AFT POD2 ',POD(2)
+write (*,1001) 'LOGINFO CONTTABLE AFT POD3 ',POD(3)
+write (*,1001) 'LOGINFO CONTTABLE AFT POD4 ',POD(4)
+write (*,1001) 'LOGINFO CONTTABLE AFT PC   ',PC
+write (*,1001) 'LOGINFO CONTTABLE AFT EBD  ',EBD
+
+! OUTPUT FORMATS
+
+1001 format (a200,2x,f7.1)
+1002 format (a200,2x,f7.2)
+1003 format (a200,2x,f7.3)
+1005 format (a200,2x,f7.5)
+3001 format (a200,3(2x,I5))
+4001 format (a200,4(2x,I5))
+5000 format (a200,2x,f4.1,2x,f4.1,a3,2x,f4.1,a2,f4.1)
+6000 format (a200,f4.1,2x,f4.1,a3,f5.1,2x,f5.1,a3,f5.1,2x,a2,f5.1)
+
 !
 !
 !  Graphics
